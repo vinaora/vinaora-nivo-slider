@@ -1,0 +1,600 @@
+/**
+ * @version		$Id: amazing.css 2012-03-15 vinaora $
+ * @package		VINAORA NIVO SLIDER
+ * @subpackage	mod_vt_nivo_slider
+ * @copyright	Copyright (C) 2012 VINAORA. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @website		http://vinaora.com
+ * @twitter		http://twitter.com/vinaora
+ * @facebook	http://facebook.com/vinaora
+*/
+
+.theme-amazing.slider-wrapper{
+	position:relative;
+}
+.theme-amazing .nivoSlider{
+	overflow:visible;
+	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	-moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	box-shadow: 0px 1px 5px 0px #4a4a4a;	
+}
+.theme-amazing .nivoSlider img {
+	display:none;
+}
+.theme-amazing .nivo-controlNav{
+	margin:20px;
+	padding:0;
+}
+.theme-amazing .nivo-directionNav a{
+	top:50%;
+}
+.theme-amazing .nivo-caption{
+	margin: 10px;
+}
+
+/* Nivo Control Position */
+.nivocontrol-top .nivo-controlNav,
+.nivocontrol-topleft .nivo-controlNav,
+.nivocontrol-topright .nivo-controlNav,
+.nivocontrol-bottom .nivo-controlNav,
+.nivocontrol-bottomleft .nivo-controlNav,
+.nivocontrol-bottomright .nivo-controlNav{
+	position:absolute;
+	z-index: 20;
+}
+
+.nivocontrol-top .nivo-controlNav{
+	left:40%;
+	top:0px;
+}
+
+.nivocontrol-topleft .nivo-controlNav {
+	left:0 !important;
+	top:0 !important;
+}
+
+.nivocontrol-topright .nivo-controlNav {
+	right:0 !important;
+	top:0 !important;
+}
+
+.nivocontrol-bottom .nivo-controlNav{
+	left:40%;
+	bottom:0;
+}
+
+.nivocontrol-bottomleft .nivo-controlNav {
+	bottom:0 !important;
+	left:0 !important;
+}
+
+.nivocontrol-bottomright .nivo-controlNav {
+	bottom:0 !important;
+	right:0 !important;
+}
+
+.nivocontrol-bellow .nivo-controlNav{
+	margin:15px auto;
+	width:150px;
+	padding-left:50px;
+}
+
+/* Nivo Caption Position */
+.captionposition-top .nivo-caption{
+	top:0;
+	right:auto;
+	bottom:auto;
+	left:50%;
+	margin-left:-100px;
+}
+.captionposition-topleft .nivo-caption{
+	top:0;
+	right:auto;
+	bottom:auto;
+	left:0;
+}
+.captionposition-topright .nivo-caption{
+	top:0;
+	right:0;
+	bottom:auto;
+	left:auto;
+}
+.captionposition-bottom .nivo-caption{
+	top:auto;
+	right:auto;
+	bottom:0;
+	left:50%;
+	margin-left:-100px;
+}
+.captionposition-bottomleft .nivo-caption{
+	top:auto;
+	right:auto;
+	bottom:0;
+	left:0;
+}
+.captionposition-bottomright .nivo-caption{
+	top:auto;
+	right:0;
+	bottom:0;
+	left:auto;
+}
+
+/* Nivo Caption Border */
+.captionrounded-all .nivo-caption {
+	-moz-border-radius:8px 8px 8px 8px;
+	-webkit-border-radius:8px 8px 8px 8px;
+	border-radius:8px 8px 8px 8px;
+}
+.captionrounded-left .nivo-caption{
+	-moz-border-radius:8px 0 0 8px;
+	-webkit-border-radius:8px 0 0 8px;
+	border-radius:8px 0 0 8px;
+}
+.captionrounded-right .nivo-caption {
+	-moz-border-radius:0 8px 8px 0;
+	-webkit-border-radius:0 8px 8px 0;
+	border-radius:0 8px 8px 0;
+}
+.captionrounded-top .nivo-caption{
+	-moz-border-radius:8px 8px 0 0;
+	-webkit-border-radius:8px 8px 0 0;
+	border-radius:8px 8px 0 0;
+}
+.captionrounded-bottom .nivo-caption {
+	-moz-border-radius:0 0 8px 8px;
+	-webkit-border-radius:0 0 8px 8px;
+	border-radius:0 0 8px 8px;
+}
+
+.nivo-caption h3{
+	font-weight:bold;
+	font-size:18px;
+	margin:2px 0 2px 0;
+	padding:0 2px 0 7px;
+	color:#FFFFFF;
+}
+.nivo-caption p{
+	padding:0 2px 0 7px;
+	margin:2px 0 2px 0;
+}
+
+.nivo-caption .nivo-heading,
+.nivo-caption .nivo-heading a{
+	margin:0 !important;
+	font-weight:bold !important;
+	text-decoration:none !important;
+	padding-right:5px !important;
+	padding-bottom:0 !important;
+	padding-top:5px !important;
+	display:block !important;
+	text-align:left !important;
+}
+.nivo-caption .nivo-description{
+	letter-spacing:0.4px !important;
+	margin:0 !important;
+	padding-left:5px !important;
+	padding-right:5px !important;
+	padding-bottom:2px !important;
+	padding-top:0 !important;z-index:10 !important;
+	display:block !important;
+	text-align:left !important;
+}
+
+/* Nivo Bullets */
+.nivo-bullets01 .nivo-controlNav a,
+.nivo-bullets02 .nivo-controlNav a,
+.nivo-bullets03 .nivo-controlNav a,
+.nivo-bullets04 .nivo-controlNav a,
+.nivo-bullets05 .nivo-controlNav a,
+.nivo-bullets06 .nivo-controlNav a,
+.nivo-bullets07 .nivo-controlNav a,
+.nivo-bullets08 .nivo-controlNav a,
+.nivo-bullets09 .nivo-controlNav a,
+.nivo-bullets10 .nivo-controlNav a,
+.nivo-bullets11 .nivo-controlNav a,
+.nivo-bullets12 .nivo-controlNav a,
+.nivo-bullets13 .nivo-controlNav a{
+	display:block;
+	text-indent:-9999px;
+	position:relative;
+	outline:none;
+	border:0 none;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.nivo-bullets01 .nivo-controlNav a{
+	width:17px;
+	height:17px;
+	background:url('bullets/01.png') no-repeat;
+	margin-right:3px;
+}
+.nivo-bullets01 .nivo-controlNav a.active {
+	background-position:0 -23px;
+}
+
+.nivo-bullets02 .nivo-controlNav a {
+	width:18px;
+	height:18px;
+	background:url('bullets/02.png') no-repeat;
+	margin-right:1px;
+}
+.nivo-bullets02 .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-bullets03 .nivo-controlNav a {
+	width:8px;
+	height:8px;
+	background:url('bullets/03.png') left top;
+	margin-left:4px;
+}
+.nivo-bullets03 .nivo-controlNav a.active,
+.nivo-bullets03 .nivo-controlNav a:hover {
+	background-position:right top;
+}
+
+.nivo-bullets04 .nivo-controlNav a{
+	width:20px;
+	height:15px;
+	background:url('bullets/04.png') right top;
+}
+.nivo-bullets04 .nivo-controlNav a.active,
+.nivo-bullets04 .nivo-controlNav a:hover{
+	background-position:left top;
+}
+
+.nivo-bullets05 .nivo-controlNav a{
+	width:16px;
+	height:15px;
+	background:url('bullets/05.png') left top;
+}
+.nivo-bullets05 .nivo-controlNav a.active{
+	background-position:right top;
+}
+.nivo-bullets05 .nivo-controlNav a:hover{
+	background-position:-16px 0;
+}
+
+.nivo-bullets06 .nivo-controlNav a{
+	width:15px;
+	height:15px;
+	background:url('bullets/06.png') left top;
+	margin-left:2px;
+}
+.nivo-bullets06 .nivo-controlNav a.active{
+	background-position:0 100%;
+}
+.nivo-bullets06 .nivo-controlNav a:hover{
+	background-position:0 50%;
+}
+
+.nivo-bullets07 .nivo-controlNav a{
+	width:11px;
+	height:11px;
+	background:url('bullets/07.png') no-repeat scroll 0 0 transparent;
+	margin-right:4px;
+}
+.nivo-bullets07 .nivo-controlNav a.active{
+	background-position:-11px;
+}
+.nivo-bullets07 .nivo-controlNav a:hover{
+	background-position:100% 0;
+}
+
+.nivo-bullets08 .nivo-controlNav a{
+	width:20px;
+	height:20px;
+	background:url('bullets/08.png') 0 0 no-repeat;
+	margin-left:2px;
+}
+.nivo-bullets08 .nivo-controlNav a.active{
+	background-position:0 100%;
+}
+.nivo-bullets08 .nivo-controlNav a:hover{
+	background-position:0 -30px;
+}
+
+.nivo-bullets09 .nivo-controlNav a{
+	width:20px;
+	height:15px;
+	background:url('bullets/09.png') 0 0 no-repeat;
+	margin-left:2px;
+}
+.nivo-bullets09 .nivo-controlNav a.active{
+	background-position:0 -15px;
+}
+.nivo-bullets09 .nivo-controlNav a:hover{
+	background-position:0 -30px;
+}
+
+.nivo-bullets10 .nivo-controlNav a {
+	width:22px;
+	height:15px;
+	background:url('bullets/10.png') no-repeat;
+	margin-right:3px;
+}
+.nivo-bullets10 .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-bullets11 .nivo-controlNav a {
+	width:13px;
+	height:12px;
+	background:url('bullets/11.png') no-repeat;
+	margin-right:3px;
+}
+.nivo-bullets11 .nivo-controlNav a.active {
+	background-position:0 -12px;
+}
+
+.nivo-bullets12 .nivo-controlNav {
+	background:url('bullets/line.png') repeat-x 0 6px;
+}
+.nivo-bullets12 .nivo-controlNav a {
+	width:13px;
+	height:14px;
+	background:url('bullets/12.png') no-repeat;
+	margin-right:15px;
+}
+.nivo-bullets12 .nivo-controlNav a.active {
+	background-position:0 -15px;
+}
+.nivo-bullets12 .nivo-controlNav a:last-child, a.last-child {
+	margin-right:0;
+}
+
+.nivo-bullets13 .nivo-controlNav a {
+	height:10px;
+	width:10px;
+	border:1px solid #d6d6d6;
+	color:#d6d6d6;
+	margin-left:5px;
+	margin-bottom:5px;
+}
+.nivo-bullets13 .nivo-controlNav a.active {
+	background-color:#d6d6d6;
+	color:#FFFFFF;
+}
+.nivo-bullets13 .nivo-controlNav a:hover {
+	background-color:#d6d6d6;
+	color:#FFFFFF;
+}
+
+/* Nivo Arrows */
+.nivo-arrows01 .nivo-directionNav a,
+.nivo-arrows02 .nivo-directionNav a,
+.nivo-arrows03 .nivo-directionNav a,
+.nivo-arrows04 .nivo-directionNav a,
+.nivo-arrows05 .nivo-directionNav a,
+.nivo-arrows06 .nivo-directionNav a,
+.nivo-arrows07 .nivo-directionNav a,
+.nivo-arrows08 .nivo-directionNav a,
+.nivo-arrows09 .nivo-directionNav a,
+.nivo-arrows10 .nivo-directionNav a,
+.nivo-arrows11 .nivo-directionNav a,
+.nivo-arrows12 .nivo-directionNav a{
+	display:block;
+	text-indent:-9999px;
+	position:absolute;
+	outline:none;
+	border:0 none;
+	cursor:pointer;
+}
+
+.nivo-arrows01 .nivo-directionNav a {
+	height:30px;
+	width:30px;
+	margin-top:-15px;
+	background:url('arrows/01.png') no-repeat;
+}
+.nivo-arrows01 a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.nivo-arrows01 a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-arrows02 .nivo-directionNav a {
+	height:62px;
+	width:38px;
+	margin-top:-31px;
+	background:url('arrows/02.png') no-repeat;
+}
+.nivo-arrows02 a.nivo-nextNav {
+	background-position:100% 0;
+	right:-4px;
+}
+.nivo-arrows02 a.nivo-nextNav:hover {
+	background-position:100% 100%;
+}
+.nivo-arrows02 a.nivo-prevNav {
+	background-position:0 0;
+	left:-4px;
+}
+.nivo-arrows02 a.nivo-prevNav:hover {
+	background-position:0 100%;
+}
+
+.nivo-arrows03 .nivo-directionNav a{
+	height:75px;
+	width:60px;
+	margin-top:-38px;
+	background:url('arrows/03.png') no-repeat;
+	opacity:0.7;
+}
+.nivo-arrows03 a.nivo-nextNav{
+	background-position:100% 0;
+	right:0;
+}
+.nivo-arrows03 a.nivo-prevNav{
+	background-position:0 0;
+	left:0;
+}
+
+.nivo-arrows04 .nivo-directionNav a{
+	height:56px;
+	width:29px;
+	margin-top:-28px;
+	background:url('arrows/04.png') no-repeat;
+}
+.nivo-arrows04 a.nivo-nextNav{
+	background-position:100% 0;
+	right:-29px;
+}
+.nivo-arrows04 a.nivo-prevNav{
+	background-position:0 0;
+	left:-29px;
+}
+
+.nivo-arrows05 .nivo-directionNav a{
+	height:67px;
+	width:32px;
+	margin-top:-34px;
+	background:url('arrows/05.png') no-repeat;
+}
+.nivo-arrows05 a.nivo-nextNav{
+	background-position:100% 0;
+	right:-7px;
+}
+.nivo-arrows05 a.nivo-prevNav{
+	background-position:0 100%;
+	left:-7px;
+}
+.nivo-arrows05 a.nivo-nextNav:hover{
+	background-position:0 0;
+}
+.nivo-arrows05 a.nivo-prevNav:hover{
+	background-position:100% 100%;
+}
+
+.nivo-arrows06 .nivo-directionNav a{
+	height:46px;
+	width:46px;
+	margin-top:-23px;
+	background:#000 url('arrows/06.png') no-repeat 50% 50%;
+	opacity:0.6 !important;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.nivo-arrows06 .nivo-directionNav a:hover{
+	opacity:0.8 !important;
+}
+.nivo-arrows06 a.nivo-nextNav{
+	background-position:100% 0;
+	right:5px;
+}
+.nivo-arrows06 a.nivo-prevNav{
+	background-position:0 0;
+	left:5px;
+}
+
+.nivo-arrows07 .nivo-directionNav a{
+	height:45px;
+	width:45px;
+	margin-top:-23px;
+	background:url('arrows/07.png') no-repeat;
+}
+.nivo-arrows07 a.nivo-nextNav{
+	background-position:100% 0;
+	right:10px;
+}
+.nivo-arrows07 a.nivo-prevNav{
+	background-position:0 0;
+	left:10px;
+}
+
+.nivo-arrows08 .nivo-directionNav a{
+	height:66px;
+	width:59px;
+	margin-top:-33px;
+	background:url('arrows/08.png') no-repeat;
+}
+.nivo-arrows08 a.nivo-nextNav{
+	background-position:100% 0;
+	right:-2px;
+}
+.nivo-arrows08 a.nivo-nextNav:hover{
+	background-position:100% 100%;
+}
+.nivo-arrows08 a.nivo-prevNav{
+	background-position:0 0;
+	left:-2px;
+}
+.nivo-arrows08 a.nivo-prevNav:hover{
+	background-position:0 100%;
+}
+
+.nivo-arrows09 .nivo-directionNav a{
+	height:45px;
+	width:45px;
+	margin-top:-23px;
+	background:url('arrows/09.png') no-repeat;
+}
+.nivo-arrows09 a.nivo-nextNav{
+	background-position:100% 0;
+	right:10px;
+}
+.nivo-arrows09 a.nivo-prevNav{
+	background-position:0 0;
+	left:10px;
+}
+
+.nivo-arrows10 .nivo-directionNav a{
+	height:77px;
+	width:38px;
+	margin-top:-39px;
+	background:url('arrows/10.png') no-repeat;
+}
+.nivo-arrows10 a.nivo-nextNav{
+	background-position: 100% 0%;
+	right:-19px;
+}
+.nivo-arrows10 a.nivo-prevNav{
+	background-position: 0% 100% ;
+	left:-19px;
+}
+
+.nivo-arrows11 .nivo-directionNav a{
+	height:77px;
+	width:38px;
+	margin:0 0 0 0 !important;
+}
+.nivo-arrows11 a.nivo-nextNav{
+	top:0;
+	width:40px;
+	height:100%;
+	background:rgba(0, 0, 0, 0.3) url('arrows/11.png') 0 50% no-repeat;
+}
+.nivo-arrows11 a.nivo-nextNav:hover{
+	background-position:-60px 50%;
+}
+.nivo-arrows11 a.nivo-prevNav{
+	top:0;
+	width:40px;
+	height:100%;
+	background:rgba(0, 0, 0, 0.3) url('arrows/11.png') -180px 50% no-repeat;
+}
+.nivo-arrows11 a.nivo-prevNav:hover{
+	background-position:-240px 50%
+}
+
+.nivo-arrows12 .nivo-directionNav a{
+	height:50px;
+	width:50px;
+	margin-top:-25px;
+	background:url('arrows/12.png') 0 50px no-repeat;
+}
+.nivo-arrows12 a.nivo-nextNav{
+	background-position:0 0;
+	right:19px;
+}
+.nivo-arrows12 a.nivo-prevNav{
+	background-position:0 -50px;
+	left:19px;
+}
