@@ -23,7 +23,7 @@ Key Features
 Our Featured Joomla Slideshows
 ------------------------------
 * [Vinaora Cu3er 3D Slideshow](http://vinaora.com/vinaora-cu3er-3d-slideshow/): Show Joomla images in 3D Flash Slide-show
-* [Vinaora Cu3ox Slideshow](http://vinaora.com/vinaora-cu3ox-slideshow/): Allows you to easily create an image slider for Joomla
+* [Vinaora Cu3ox Slideshow](http://vinaora.com/vinaora-cu3ox-slideshow/): Create an attractive Joomla image slider with cool 3D slice effects
 * [Vinaora Nice Slideshow](http://vinaora.com/vinaora-nice-slideshow/): Nice and lightweight javascript slider to create fantastic Joomla sliders
 * [Vinaora Slick Slideshow](http://vinaora.com/vinaora-slick-slideshow/): Fashionable flash + image Joomla slideshow
 
