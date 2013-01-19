@@ -20,86 +20,100 @@ class modVT_Nivo_SliderHelper
 	}
 
 	public static function &validParams($params){
-		$slide_width	= trim($params->get('slide_width'));
-		$slide_width	= (!strlen($slide_width) || ($slide_width == "auto")) ? "auto" : preg_replace('/((\s+)?px)?$/', "", $slide_width)."px";
-		$params->set('slide_width', $slide_width);
+	
+		$pattern	= '/((\s+)?px)?$/';
 
-		$slide_height	= trim($params->get('slide_height'));
-		$slide_height	= (!strlen($slide_height) || ($slide_height == "auto")) ? "auto" : preg_replace('/((\s+)?px)?$/', "", $slide_height)."px";
-		$params->set('slide_height', $slide_height);
+		// Valid the Dimension of Slideshow
+		$param	= trim( $params->get('slide_width') );
+		$param	= ( !strlen($param) || ($param == "auto") ) ? "auto" : preg_replace($pattern, "", $param)."px";
+		$params->set('slide_width', $param);
 
-		$slide_bdwidth	= trim($params->get('slide_bdwidth'));
-		$slide_bdwidth	= preg_replace('/((\s+)?px)?$/', "", $slide_bdwidth)."px";
-		$params->set('slide_bdwidth', $slide_bdwidth);
+		$param	= trim( $params->get('slide_height') );
+		$param	= ( !strlen($param) || ($param == "auto") ) ? "auto" : preg_replace($pattern, "", $param)."px";
+		$params->set('slide_height', $param);
 
-		$slices		= intval($params->get('slices', 0));
-		$slices		= ($slices) ? $slices : mt_rand(1,10);
-		$params->set('slices', $slices);
+		$param	= trim( $params->get('slide_bdwidth') );
+		$param	= preg_replace($pattern, "", $param)."px";
+		$params->set('slide_bdwidth', $param);
 
-		$boxCols	= intval($params->get('boxCols', 0));
-		$boxCols	= ($boxCols) ? $boxCols : mt_rand(1,10);
-		$params->set('boxCols', $boxCols);
+		// Valid the number of Slices, Columns, Rows
+		$param	= (int) $params->get('slices', 0);
+		$param	= ($param) ? $param : mt_rand(1,10);
+		$params->set('slices', $param);
 
-		$boxRows	= intval($params->get('boxRows', 0));
-		$boxRows	= ($boxRows) ? $boxRows : mt_rand(1,10);
-		$params->set('boxRows', $boxRows);
+		$param	= (int) $params->get('boxCols', 0);
+		$param	= ($param) ? $param : mt_rand(1,10);
+		$params->set('boxCols', $param);
 
-		$captionWidth	= trim($params->get('captionWidth'));
-		$captionWidth	= (!strlen($captionWidth) || ($captionWidth == "auto")) ? "auto" : preg_replace('/((\s+)?px)?$/', "", $captionWidth)."px";
-		$params->set('captionWidth', $captionWidth);
+		$param	= (int) $params->get('boxRows', 0);
+		$param	= ($param) ? $param : mt_rand(1,10);
+		$params->set('boxRows', $param);
 
-		$captionHeight	= trim($params->get('captionHeight'));
-		$captionHeight	= (!strlen($captionHeight) || ($captionHeight == "auto")) ? "auto" : preg_replace('/((\s+)?px)?$/', "", $captionHeight)."px";
+		// Valid the Dimension of Slideshow Caption
+		$param	= trim( $params->get('captionWidth') );
+		$param	= ( !strlen($param) || ($param == "auto") ) ? "auto" : preg_replace($pattern, "", $param)."px";
+		$params->set('captionWidth', $param);
+
+		$param	= trim( $params->get('captionHeight') );
+		$param	= ( !strlen($param) || ($param == "auto") ) ? "auto" : preg_replace($pattern, "", $param)."px";
 		$params->set('captionHeight', $captionHeight);
 
-		$captionMarginVertical	= trim($params->get('captionMarginVertical'));
-		$captionMarginVertical	= preg_replace('/((\s+)?px)?$/', "", $captionMarginVertical)."px";
-		$params->set('captionMarginVertical', $captionMarginVertical);
+		// Valid the Margin of Slideshow Caption
+		$param	= trim( $params->get('captionMarginVertical') );
+		$param	= preg_replace($pattern, "", $param)."px";
+		$params->set('captionMarginVertical', $param);
 
-		$captionMarginHorizontal = trim($params->get('captionMarginHorizontal'));
-		$captionMarginHorizontal = preg_replace('/((\s+)?px)?$/', "", $captionMarginHorizontal)."px";
-		$params->set('captionMarginHorizontal', $captionMarginHorizontal);
+		$param = trim( $params->get('captionMarginHorizontal') );
+		$param = preg_replace($pattern, "", $param)."px";
+		$params->set('captionMarginHorizontal', $param);
 
-		$titleFontStyle = $params->get('titleFontStyle');
-		$titleFontStyle = self::getFontStyle($titleFontStyle);
-		$params->set('titleFontStyle', $titleFontStyle);
+		// Valid the Font styles
+		$param = $params->get('titleFontStyle');
+		$param = self::getFontStyle($param);
+		$params->set('titleFontStyle', $param);
 
-		$descFontStyle = $params->get('descFontStyle');
-		$descFontStyle = self::getFontStyle($descFontStyle);
-		$params->set('descFontStyle', $descFontStyle);
+		$param = $params->get('descFontStyle');
+		$param = self::getFontStyle($param);
+		$params->set('descFontStyle', $param);
 
 		return $params;
 	}
 
-	/*
+	/**
 	 * Add jQuery Library to <head> tag
 	 */
-	public static function addjQuery($source='local', $version='1.7.1'){
-		$source = strtolower(trim($source));
+	public static function addjQuery($source='local', $version='1.9.0'){
+		$source	= strtolower(trim($source));
 		$version = trim($version);
 
 		switch($source){
 			case 'local':
 				JHtml::script("media/mod_vt_nivo_slider/js/jquery/$version/jquery.min.js");
 				break;
+			
 			case 'google':
-				JHtml::script("https://ajax.googleapis.com/ajax/libs/jquery/$version/jquery.min.js");
+				JHtml::script("http://ajax.googleapis.com/ajax/libs/jquery/$version/jquery.min.js");
 				break;
+				
+			case 'jquery':
+				JHtml::script("http://code.jquery.com/jquery-$version.min.js");
+				break;
+			
 			default:
 				return false;
 		}
 		return true;
 	}
 
-	/*
+	/**
 	 * Add file [theme].css to <head> tag
 	 */
 	public static function addThemCSS($theme, $layout='default'){
 		// Remove prefix "demo-" if has'
 		$demo = preg_replace("/^(_:)?demo-/", "", $layout);
 		$theme = ($layout == $demo) ? $theme : $demo;
-		$css = "media/mod_vt_nivo_slider/themes/$theme/$theme.css";
-		if (file_exists(JPATH_BASE.DS.$css)){
+		$css = "/media/mod_vt_nivo_slider/themes/$theme/$theme.css";
+		if (file_exists(JPATH_BASE.$css)){
 			JHtml::stylesheet($css);
 		}
 		else{
@@ -130,7 +144,7 @@ class modVT_Nivo_SliderHelper
 		return '';
 	}
 
-	/*
+	/**
 	 * Get Vinaora Nivo Slider
 	 */
 	public static function getSlider($params, $separator = "\n"){
@@ -140,6 +154,7 @@ class modVT_Nivo_SliderHelper
 		$slide_height	= $params->get('slide_height');
 		$item_dir		= $params->get('item_dir');
 
+		// Get the links, titles, descriptions of all images
 		$links	= $params->get('item_url');
 		$links	= str_replace("|", "\r\n", $links);
 
@@ -154,11 +169,14 @@ class modVT_Nivo_SliderHelper
 		// Get all images
 		$items	= self::getItems($params);
 
+		// Not found images
 		if (empty($items) || !count($items)){
 			return $slider;
 		}
 
 		foreach($items as $i=>$path){
+		
+			// Get the link, title, description of every image
 			$link	= self::getParam($links, $i+1, $separator);
 			$link	= trim($link);
 			$link	= htmlspecialchars($link, ENT_QUOTES);
@@ -171,7 +189,7 @@ class modVT_Nivo_SliderHelper
 			$desc	= trim($desc);
 			$desc	= htmlspecialchars($desc, ENT_QUOTES);
 
-			// Get the image name in the full image path
+			// Get the image name in the full path of image
 			$image	= strrchr($path, "/");
 			$data_thumb = "";
 			$captionid = "";
@@ -181,16 +199,23 @@ class modVT_Nivo_SliderHelper
 				$captionid = '#nivocaption'.$i;
 
 				$slider["captions"] .= "<div id=\"nivocaption$i\" class=\"nivo-html-caption\">";
+				
+				// Found a title of image
 				if (strlen($title)) $slider["captions"] .= "<div class=\"nivo-heading\">$title</div>";
+				
+				// Found a description of image
 				if (strlen($desc)) $slider["captions"] .= "<div class=\"nivo-description\">$desc</div>";
+				
 				$slider["captions"] .="</div>"."\n";
 			}
 
-			$tmp	= "<img src=\"$path\" alt=\"Vinaora Nivo Slider\" title=\"$captionid\" data-thumb=\"$data_thumb\" width=\"$slide_width\" height=\"$slide_height\"/>";
+			$img	= "<img src=\"$path\" alt=\"Vinaora Nivo Slider\" title=\"$captionid\" data-thumb=\"$data_thumb\" width=\"$slide_width\" height=\"$slide_height\"/>";
+			
+			// Found or not found the link of image
 			if (!empty($link)){
-				$slider["images"] .= "<a href=\"$link\" target=\"$target\">" . $tmp . "</a>";
+				$slider["images"] .= "<a href=\"$link\" target=\"$target\">$img</a>";
 			}else{
-				$slider["images"] .= $tmp;
+				$slider["images"] .= $img;
 			}
 		}
 		$slider["images"] .= "\n";
@@ -199,7 +224,7 @@ class modVT_Nivo_SliderHelper
 		return $slider;
 	}
 
-	/*
+	/**
 	 * Get the Captions
 	 */
 	public static function getCaptions($params, $separator = "\n"){
@@ -239,11 +264,11 @@ class modVT_Nivo_SliderHelper
 		return $str;
 	}
 
-	/*
+	/**
 	 * Get the first slide to start slideshow
 	 */
 	public static function getStartSlide($params){
-		$startSlide = intval($params->get('startSlide'));
+		$startSlide = (int) $params->get('startSlide');
 		$items = self::getItems($params);
 		if (empty($items) || !count($items)) return 0;
 		$total = count($items);
