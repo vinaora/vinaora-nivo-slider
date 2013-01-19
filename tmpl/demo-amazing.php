@@ -96,7 +96,6 @@ defined('_JEXEC') or die;
 			pauseTime: <?php echo $pauseTime; ?>, // How long each slide will show
 			startSlide: <?php echo $startSlide; ?>, // Set starting Slide (0 index)
 			directionNav: <?php echo $directionNav; ?>, // Next & Prev navigation
-			directionNavHide: <?php echo $directionNavHide; ?>, // Only show on hover
 			controlNav: <?php echo $controlNav; ?>, // 1,2,3... navigation
 			controlNavThumbs: <?php echo $controlNavThumbs; ?>, // Use thumbnails for Control Nav
 			pauseOnHover: <?php echo $pauseOnHover; ?>, // Stop animation while hovering

@@ -56,7 +56,6 @@ $pauseTime			= intval($params->get('pauseTime'));
 $startSlide			= intval($params->get('startSlide'));
 
 $directionNav		= $params->get('directionNav');
-$directionNavHide	= $params->get('directionNavHide');
 
 $controlNav			= $params->get('controlNav');
 $controlNavThumbs	= $params->get('controlNavThumbs','false');

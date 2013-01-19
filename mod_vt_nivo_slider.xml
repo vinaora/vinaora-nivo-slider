@@ -83,10 +83,6 @@
 					<option value="true">JYES</option>
 					<option value="false">JNO</option>
 				</field>
-				<field name="directionNavHide" type="radio" default="true" label="MOD_VT_NIVO_SLIDER_FIELD_DIRECTIONNAVHIDE" description="MOD_VT_NIVO_SLIDER_FIELD_DIRECTIONNAVHIDE_DESC">
-					<option value="true">JYES</option>
-					<option value="false">JNO</option>
-				</field>
 				<field name="controlNav" type="radio" default="true" label="MOD_VT_NIVO_SLIDER_FIELD_CONTROLNAV" description="MOD_VT_NIVO_SLIDER_FIELD_CONTROLNAV_DESC">
 					<option value="true">JYES</option>
 					<option value="false">JNO</option>
