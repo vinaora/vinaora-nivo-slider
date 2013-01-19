@@ -30,7 +30,7 @@ Our Featured Joomla Slideshows
 Donate
 ------
 
-If you like [Vinaora Nivo Slider](), you can support our work by donating today.
+If you like [Vinaora Nivo Slider](http://vinaora.com/vinaora-nivo-slider/), you can support our work by donating today.
 
 * You can share this link http://vinaora.com/vinaora-nivo-slider/ with your friends or others
 * Buy very fast and reliability [business hosting](https://secure1.inmotionhosting.com/cgi-bin/gby/clickthru.cgi?id=vinaora&page=5) from InmotionHosting >> http://goo.gl/dfN4F (recommended)
