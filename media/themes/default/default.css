@@ -1,31 +1,36 @@
 /*
 Skin Name: Nivo Slider Default Theme
 Skin URI: http://nivo.dev7studios.com
-Skin Type: flexible
 Description: The default skin for the Nivo Slider.
-Version: 1.2
+Version: 1.3
 Author: Gilbert Pellegrom
 Author URI: http://dev7studios.com
-Customized by: Vinaora (http://vinaora.com)
+Supports Thumbs: true
 */
 
-.theme-default.slider-wrapper{
-	width: 100%;
-	margin: 0 auto;
-}
-
 .theme-default .nivoSlider {
-	margin:0 auto;
+	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
-	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
-	-moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
-	box-shadow: 0px 1px 5px 0px #4a4a4a;
+    margin-bottom:10px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
 }
 .theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
 	display:none;
 }
+.theme-default .nivoSlider a {
+	border:0;
+	display:block;
+}
 
-/* Control nav styles (e.g. 1,2,3...) */
+.theme-default .nivo-controlNav {
+	text-align: center;
+	padding: 20px 0;
+}
 .theme-default .nivo-controlNav a {
 	display:inline-block;
 	width:22px;
@@ -39,7 +44,6 @@ Customized by: Vinaora (http://vinaora.com)
 	background-position:0 -22px;
 }
 
-/* Direction nav styles (e.g. Next & Prev) */
 .theme-default .nivo-directionNav a {
 	display:block;
 	width:30px;
@@ -47,7 +51,13 @@ Customized by: Vinaora (http://vinaora.com)
 	background:url(arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
+.theme-default:hover .nivo-directionNav a { opacity: 1; }
 .theme-default a.nivo-nextNav {
 	background-position:-30px 0;
 	right:15px;
@@ -56,25 +66,17 @@ Customized by: Vinaora (http://vinaora.com)
 	left:15px;
 }
 
-/* Caption styles */
 .theme-default .nivo-caption {
     font-family: Helvetica, Arial, sans-serif;
 }
 .theme-default .nivo-caption a {
     color:#fff;
     border-bottom:1px dotted #fff;
-	text-decoration:none;
 }
 .theme-default .nivo-caption a:hover {
     color:#fff;
-	border-bottom:1px solid #fff;
-}
-.theme-default .nivo-heading{
-	text-transform:uppercase;
-	font-weight:bold;
 }
 
-/* Thumbnails Images styles */
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
 	width: 100%;
 }
