@@ -1,9 +1,8 @@
 <?php
 /**
- * @version		$Id: default.php 2012-06-10 vinaora $
  * @package		VINAORA NIVO SLIDER
  * @subpackage	mod_vt_nivo_slider
- * @copyright	Copyright (C) 2011-2012 VINAORA. All rights reserved.
+ * @copyright	Copyright (C) 2011-2013 VINAORA. All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  *
  * @website		http://vinaora.com
