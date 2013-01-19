@@ -15,11 +15,12 @@
 defined('_JEXEC') or die;
 
 // Require the base helper class only once
-require_once dirname(__FILE__).DS.'helper.php';
+require_once dirname(__FILE__) . '/helper.php';
 
 $module_id	= $module->id;
 $base_url	= rtrim(JURI::base(true), "/");
 
+// Add Nivo Slider stylesheet to <head> tag
 JHtml::stylesheet('media/mod_vt_nivo_slider/css/nivo-slider.css');
 
 $params = modVT_Nivo_SliderHelper::validParams($params);
@@ -32,33 +33,34 @@ $layout = preg_replace('/^_:/', '', $params->get('layout', 'default'));
 $theme = $params->get('theme', 'default');
 modVT_Nivo_SliderHelper::addThemCSS($theme, $layout);
 
-$source = $params->get('jquery_source', 'local');
-$version = $params->get('jquery_version', '1.7.1');
+$source		= $params->get('jquery_source', 'local');
+$version	= $params->get('jquery_version', '1.9.0');
 
 // Add jQuery library. Check jQuery loaded or not. See more details >> http://goo.gl/rK8Yr
 $app = JFactory::getApplication();
-if($app->get('jquery') == false) {
+if(!isset($app->jquery) || $app->jquery === false) {
 	modVT_Nivo_SliderHelper::addjQuery($source, $version);
-	$app->set('jquery', true);
+	$app->jquery = true;
 }
 
+// Add Nivo Slider script to <head> tag
 JHtml::script('media/mod_vt_nivo_slider/js/jquery.nivo.slider.min.js');
 
-// Get basic parameters
+// Get basic parameters for Nivo Slider script
 $effect				= $params->get('effect');
 $slices				= $params->get('slices');
 $boxCols			= $params->get('boxCols');
 $boxRows			= $params->get('boxRows');
 
-$animSpeed			= intval($params->get('animSpeed'));
-$pauseTime			= intval($params->get('pauseTime'));
+$animSpeed			= (int) $params->get('animSpeed');
+$pauseTime			= (int) $params->get('pauseTime');
 
-$startSlide			= intval($params->get('startSlide'));
+$startSlide			= (int) $params->get('startSlide');
 
 $directionNav		= $params->get('directionNav');
 
 $controlNav			= $params->get('controlNav');
-$controlNavThumbs	= $params->get('controlNavThumbs','false');
+$controlNavThumbs	= $params->get('controlNavThumbs', 'false');
 
 $pauseOnHover		= $params->get('pauseOnHover');
 $manualAdvance		= $params->get('manualAdvance');
@@ -102,19 +104,24 @@ if ($layout == 'default'){
 	$captionMargin				= $params->get('captionMargin');
 	$captionRounded				= $params->get('captionRounded');
 	
-	$controlPosition			= JRequest::getVar('p','top');
-	$controlStyle				= JRequest::getVar('c','01');
-	$arrowStyle					= JRequest::getVar('a','01');
-	$captionPosition			= JRequest::getVar('t','topleft');
+	$controlPosition			= JRequest::getVar('p', 'top');
+	$controlStyle				= JRequest::getVar('c', '01');
+	$arrowStyle					= JRequest::getVar('a', '01');
+	$captionPosition			= JRequest::getVar('t', 'topleft');
 
 	// Create slider
 	$startSlide	= modVT_Nivo_SliderHelper::getStartSlide($params);
 	$slider		= modVT_Nivo_SliderHelper::getSlider($params);
 
 	$images		= $slider["images"];
-	if(empty($images)) $images = JText::_('MOD_VT_NIVO_SLIDER_ERROR_IMAGE_NOT_FOUND');
+	
+	// Image not found
+	if(empty($images)){
+		$images = JText::_('MOD_VT_NIVO_SLIDER_ERROR_IMAGE_NOT_FOUND');
+	}
 	$captions	= $slider["captions"];
 }
+
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
 require JModuleHelper::getLayoutPath('mod_vt_nivo_slider', $params->get('layout', 'default'));
