@@ -31,6 +31,10 @@ Customized by: Vinaora (http://vinaora.com)
 	display:none;
 	width:568px; /* Make sure your images are the same size */
 }
+.theme-orman .nivoSlider a {
+	border:0;
+	display:block;
+}
 
 /* Control nav styles (e.g. 1,2,3...) */
 .theme-orman .nivo-controlNav {
