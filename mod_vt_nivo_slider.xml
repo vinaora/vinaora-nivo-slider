@@ -169,6 +169,7 @@
 				<field name="jquery_source" type="list" default="local" label="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_SOURCE" description="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_SOURCE_DESC">
 					<option value="local">MOD_VT_NIVO_SLIDER_OPTION_JQUERY_SOURCE_LOCAL</option>
 					<option value="google">MOD_VT_NIVO_SLIDER_OPTION_JQUERY_SOURCE_GOOGLE</option>
+					<option value="jquery">MOD_VT_NIVO_SLIDER_OPTION_JQUERY_SOURCE_JQUERY</option>
 					<option value="none">JNONE</option>
 				</field>
 				<field name="jquery_version" type="folderlist" default="1.7.1" directory="media/mod_vt_nivo_slider/js/jquery/" filter="" exclude="" stripext="" hide_none="1" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION" description="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION_DESC" />
