@@ -21,7 +21,7 @@ defined('_JEXEC') or die;
 		<div id="vt_nivo_slider<?php echo $module_id; ?>" class="nivoSlider">
 			<a href="http://vinaora.com/vinaora-visitors-counter/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-pascal/toystory_pascal.jpg" alt="toystory_pascal" title="#nivocaption0" /></a>
 			<a href="http://vinaora.com/vinaora-cu3er-3d-slideshow/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-pascal/up_pascal.jpg" alt="up_pascal" title="#nivocaption1" /></a>
-			<a href="http://vinaora.com/vinaora-slick-slideshow/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-pascal/walle_pascal.jpg" alt="walle_pascal" title="#nivocaption2" /></a>
+			<a href="http://vinaora.com/vinaora-cu3ox-slideshow/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-pascal/walle_pascal.jpg" alt="walle_pascal" title="#nivocaption2" /></a>
 			<a href="http://vinaora.com/vinaora-nivo-slider/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-pascal/nemo_pascal.jpg" alt="nemo_pascal" title="#nivocaption3" /></a>
 		</div>
 		<div id="nivocaption0" class="nivo-html-caption">
@@ -33,7 +33,7 @@ defined('_JEXEC') or die;
 			<div class="nivo-description"></div>
 		</div>
 		<div id="nivocaption2" class="nivo-html-caption">
-			<div class="nivo-heading">Vinaora Slick Slideshow</div>
+			<div class="nivo-heading">Vinaora Cu3ox Slideshow</div>
 			<div class="nivo-description"></div>
 		</div>
 		<div id="nivocaption3" class="nivo-html-caption">

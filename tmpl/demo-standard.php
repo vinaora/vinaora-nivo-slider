@@ -14,6 +14,7 @@
 // no direct access
 defined('_JEXEC') or die;
 ?>
+
 <!-- BEGIN: Vinaora Nivo Slider >> http://vinaora.com/ -->
 <div class="vt_nivo_slider<?php echo $moduleclass_sfx?>">
 	<div class="slider-wrapper theme-default">
