@@ -20,7 +20,7 @@ require_once dirname(__FILE__) . '/helper.php';
 $module_id	= $module->id;
 $base_url	= rtrim(JURI::base(true), "/");
 
-// Add Nivo Slider stylesheet to <head> tag
+// Add the main stylesheet of Nivo Slider to <head> tag
 JHtml::stylesheet('media/mod_vt_nivo_slider/css/nivo-slider.css');
 
 $params = modVT_Nivo_SliderHelper::validParams($params);
@@ -29,8 +29,11 @@ if ($demo != "-1"){
 	$params->set('layout', $demo);
 }
 
-$layout = preg_replace('/^_:/', '', $params->get('layout', 'default'));
+//$layout = preg_replace('/^_:/', '', $params->get('layout', 'default'));
+$layout = $params->get('layout', 'default');
 $theme = $params->get('theme', 'default');
+
+// Add the theme stylesheet of Nivo Slider to <head> tag
 modVT_Nivo_SliderHelper::addThemCSS($theme, $layout);
 
 $source		= $params->get('jquery_source', 'local');
@@ -104,10 +107,10 @@ if ($layout == 'default'){
 	$captionMargin				= $params->get('captionMargin');
 	$captionRounded				= $params->get('captionRounded');
 	
-	$controlPosition			= JRequest::getVar('p', 'top');
-	$controlStyle				= JRequest::getVar('c', '01');
-	$arrowStyle					= JRequest::getVar('a', '01');
-	$captionPosition			= JRequest::getVar('t', 'topleft');
+	//$controlPosition			= JRequest::getVar('p', 'top');
+	//$controlStyle				= JRequest::getVar('c', '01');
+	//$arrowStyle				= JRequest::getVar('a', '01');
+	//$captionPosition			= JRequest::getVar('t', 'topleft');
 
 	// Create slider
 	$startSlide	= modVT_Nivo_SliderHelper::getStartSlide($params);

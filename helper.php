@@ -19,6 +19,9 @@ class modVT_Nivo_SliderHelper
 	private function __construct(){
 	}
 
+	/**
+	 * Valid the Parameters of Slideshwo
+	 */
 	public static function &validParams($params){
 	
 		$pattern	= '/((\s+)?px)?$/';
@@ -112,14 +115,14 @@ class modVT_Nivo_SliderHelper
 		// Remove prefix "demo-" if has'
 		$demo = preg_replace("/^(_:)?demo-/", "", $layout);
 		$theme = ($layout == $demo) ? $theme : $demo;
-		$css = "/media/mod_vt_nivo_slider/themes/$theme/$theme.css";
-		if (file_exists(JPATH_BASE.$css)){
+		$css = "media/mod_vt_nivo_slider/themes/$theme/$theme.css";
+		if (file_exists(JPATH_BASE . '/' . $css)){
 			JHtml::stylesheet($css);
 		}
 		else{
 			JHtml::stylesheet("media/mod_vt_nivo_slider/themes/default/default.css");
 		}
-		return true;
+		return;
 	}
 
 	/*
