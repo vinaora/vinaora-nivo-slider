@@ -21,7 +21,7 @@ $module_id	= $module->id;
 $base_url	= rtrim(JURI::base(true), "/");
 
 // Add the main stylesheet of Nivo Slider to <head> tag
-JHtml::stylesheet('media/mod_vt_nivo_slider/css/nivo-slider.css');
+JHtml::stylesheet('media/mod_vt_nivo_slider/css/nivo-slider.min.css');
 
 $params = modVT_Nivo_SliderHelper::validParams($params);
 $demo = $params->get('demo');
@@ -29,7 +29,6 @@ if ($demo != "-1"){
 	$params->set('layout', $demo);
 }
 
-//$layout = preg_replace('/^_:/', '', $params->get('layout', 'default'));
 $layout = $params->get('layout', 'default');
 $theme = $params->get('theme', 'default');
 
