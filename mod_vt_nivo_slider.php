@@ -73,6 +73,8 @@ $randomStart		= $startSlide ? 'false' : 'true';
 $prevText			= htmlspecialchars($params->get('prevText'), ENT_QUOTES);
 $nextText			= htmlspecialchars($params->get('nextText'), ENT_QUOTES);
 
+$ribbon				= $params->get('ribbon');
+
 if ($layout == 'default'){
 	
 	$slide_width				= $params->get('slide_width');

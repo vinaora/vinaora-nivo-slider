@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5.20" client="site" method="upgrade">
+<extension type="module" version="2.5.25" client="site" method="upgrade">
 	<name>Vinaora Nivo Slider</name>
 	<author>VINAORA</author>
-	<creationDate>Jun 2012</creationDate>
-	<copyright>Copyright (C) 2011-2012 VINAORA. All rights reserved.</copyright>
+	<creationDate>Jan 2013</creationDate>
+	<copyright>Copyright (C) 2011-2013 VINAORA. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@vinaora.com</authorEmail>
 	<authorUrl>http://vinaora.com</authorUrl>
-	<version>2.5.20</version>
+	<version>2.5.25</version>
 	<description>MOD_VT_NIVO_SLIDER_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_vt_nivo_slider">mod_vt_nivo_slider.php</filename>
@@ -37,11 +37,11 @@
 		<fields name="params" addfieldpath="/modules/mod_vt_nivo_slider/fields" >
 			<fieldset name="basic">
 				<field name="demo" type="filelist" default="-1" directory="modules/mod_vt_nivo_slider/tmpl" filter="(^demo-\w+\.php$)" exclude="" stripext="1" hide_none="0" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_DEMO" description="MOD_VT_NIVO_SLIDER_FIELD_DEMO_DESC" />
-				<field type="spacer" name="@spacer00" hr="true" />
+				<field type="spacer" name="@bwrxjqgkef" hr="true" />
 				<field name="theme" type="folderlist" default="default" directory="media/mod_vt_nivo_slider/themes" filter="" exclude="" stripext="" hide_none="1" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_THEME" description="MOD_VT_NIVO_SLIDER_FIELD_THEME_DESC" />
 				<field name="slide_width" type="text" default="" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_WIDTH" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_WIDTH_DESC" />
 				<field name="slide_height" type="text" default="" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_HEIGHT" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_HEIGHT_DESC" />
-				<field type="spacer" name="@spacer01" hr="true" />
+				<field type="spacer" name="@ejrcngptet" hr="true" />
 				<field name="item_dir" type="folderlist" directory="images" filter="" exclude="" hide_none="0" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_ITEM_DIR" description="MOD_VT_NIVO_SLIDER_FIELD_ITEM_DIR_DESC" />
 				<field name="item_path" type="textarea" rows="5" cols="30" default="" label="MOD_VT_NIVO_SLIDER_FIELD_ITEM_PATH" description="MOD_VT_NIVO_SLIDER_FIELD_ITEM_PATH_DESC" />
 				<field name="item_title" type="textarea" rows="5" cols="30" default="" label="MOD_VT_NIVO_SLIDER_FIELD_ITEM_TITLE" description="MOD_VT_NIVO_SLIDER_FIELD_ITEM_TITLE_DESC" />
@@ -53,7 +53,7 @@
 					<option value="_parent">MOD_VT_NIVO_SLIDER_OPTION_LINK_TARGET_PARENT</option>
 					<option value="_top">MOD_VT_NIVO_SLIDER_OPTION_LINK_TARGET_TOP</option>
 				</field>
-				<field type="spacer" name="@spacer02" hr="true" />
+				<field type="spacer" name="@ijfnrhaemx" hr="true" />
 				<field name="effect" type="list" default="random" label="MOD_VT_NIVO_SLIDER_FIELD_EFFECT" description="MOD_VT_NIVO_SLIDER_FIELD_EFFECT_DESC">
 					<option value="sliceDown">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_SLICEDOWN</option>
 					<option value="sliceDownLeft">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_SLICEDOWNLEFT</option>
@@ -78,7 +78,7 @@
 				<field name="animSpeed" type="text" default="500" label="MOD_VT_NIVO_SLIDER_FIELD_ANIMSPEED" description="MOD_VT_NIVO_SLIDER_FIELD_ANIMSPEED_DESC" />
 				<field name="pauseTime" type="text" default="3000" label="MOD_VT_NIVO_SLIDER_FIELD_PAUSETIME" description="MOD_VT_NIVO_SLIDER_FIELD_PAUSETIME_DESC" />
 				<field name="startSlide" type="integer" default="0" first="0" last="50" step="1" label="MOD_VT_NIVO_SLIDER_FIELD_STARTSLIDE" description="MOD_VT_NIVO_SLIDER_FIELD_STARTSLIDE_DESC" />
-				<field type="spacer" name="@spacer03" hr="true" />
+				<field type="spacer" name="@itjouwtvce" hr="true" />
 				<field name="directionNav" type="radio" default="true" label="MOD_VT_NIVO_SLIDER_FIELD_DIRECTIONNAV" description="MOD_VT_NIVO_SLIDER_FIELD_DIRECTIONNAV_DESC">
 					<option value="true">JYES</option>
 					<option value="false">JNO</option>
@@ -87,7 +87,7 @@
 					<option value="true">JYES</option>
 					<option value="false">JNO</option>
 				</field>
-				<field type="spacer" name="@spacer04" hr="true" />
+				<field type="spacer" name="@aoxttxnwvb" hr="true" />
 				<field name="pauseOnHover" type="radio" default="true" label="MOD_VT_NIVO_SLIDER_FIELD_PAUSEONHOVER" description="MOD_VT_NIVO_SLIDER_FIELD_PAUSEONHOVER_DESC">
 					<option value="true">JYES</option>
 					<option value="false">JNO</option>
@@ -96,13 +96,18 @@
 					<option value="false">JYES</option>
 					<option value="true">JNO</option>
 				</field>
-				<field type="spacer" name="@spacer05" hr="true" />
+				<field type="spacer" name="@wktextqjlu" hr="true" />
 				<field name="prevText" type="text" default="Prev" label="MOD_VT_NIVO_SLIDER_FIELD_PREVTEXT" description="MOD_VT_NIVO_SLIDER_FIELD_PREVTEXT_DESC" />
 				<field name="nextText" type="text" default="Next" label="MOD_VT_NIVO_SLIDER_FIELD_NEXTTEXT" description="MOD_VT_NIVO_SLIDER_FIELD_NEXTTEXT_DESC" />
+				<field type="spacer" name="@kiusmzokaq" hr="true" />
+				<field name="ribbon" type="radio" default="1" label="MOD_VT_NIVO_SLIDER_FIELD_RIBBON" description="MOD_VT_NIVO_SLIDER_FIELD_RIBBON_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 			</fieldset>
 			<fieldset name="plus">
 				<field name="slide_bgcolor" type="colorpicker" default="#ffffff" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_BACKGROUNDCOLOR" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_BACKGROUNDCOLOR_DESC" />
-				<field type="spacer" name="@spacer06" hr="true" />
+				<field type="spacer" name="@healvdxvag" hr="true" />
 				<field name="slide_bdcolor" type="colorpicker" default="#ffffff" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_BORDERCOLOR" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_BORDERCOLOR_DESC" />
 				<field name="slide_bdwidth" type="text" default="10" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_BORDERWIDTH" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_BORDERWIDTH_DESC" />
 				<field name="slide_bdrounded" type="radio" default="1" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_BORDERROUNDED" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_BORDERROUNDED_DESC">
@@ -113,7 +118,7 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
-				<field type="spacer" name="@spacer07" hr="true" />
+				<field type="spacer" name="@xcgmhhnlju" hr="true" />
 				<field name="controlPosition" type="list" default="bottomright" label="MOD_VT_NIVO_SLIDER_FIELD_CONTROLPOSITION" description="MOD_VT_NIVO_SLIDER_FIELD_CONTROLPOSITION_DESC">
 					<option value="top">MOD_VT_NIVO_SLIDER_OPTION_CONTROL_POSITION_TOP</option>
 					<option value="topleft">MOD_VT_NIVO_SLIDER_OPTION_CONTROL_POSITION_TOP_LEFT</option>
@@ -125,15 +130,15 @@
 				</field>
 				<field name="controlStyle" type="filelist" directory="media/mod_vt_nivo_slider/themes/amazing/bullets" filter="(^[0-9]{2}\.png$)" exclude="" stripext=".png" hide_none="true" hide_default="true" default="05" label="MOD_VT_NIVO_SLIDER_FIELD_CONTROLSTYLE" description="MOD_VT_NIVO_SLIDER_FIELD_CONTROLSTYLE_DESC" />
 				<field name="arrowStyle" type="filelist" directory="media/mod_vt_nivo_slider/themes/amazing/arrows" filter="(^[0-9]{2}\.png$)" exclude="" stripext=".png" hide_none="true" hide_default="true" default="10" label="MOD_VT_NIVO_SLIDER_FIELD_ARROWSTYLE" description="MOD_VT_NIVO_SLIDER_FIELD_ARROWSTYLE_DESC" />
-				<field type="spacer" name="@spacer08" hr="true" />
+				<field type="spacer" name="@jbuisupvap" hr="true" />
 				<field name="titleColor" type="colorpicker" default="#333333" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_VT_NIVO_SLIDER_FIELD_TITLE_COLOR" description="MOD_VT_NIVO_SLIDER_FIELD_TITLE_COLOR_DESC" />
 				<field name="titleFontSize" type="integer" default="18" first="10" last="36" step="1" label="MOD_VT_NIVO_SLIDER_FIELD_TITLE_FONT_SIZE" description="MOD_VT_NIVO_SLIDER_FIELD_TITLE_FONT_SIZE_DESC" />
-				<field name="titleFontStyle" type="folderlist" directory="media/mod_vt_nivo_slider/fonts" hide_none="1" hide_default="0" default="" label="MOD_VT_NIVO_SLIDER_FIELD_TITLE_FONT_STYLE" description="MOD_VT_NIVO_SLIDER_FIELD_TITLE_FONT_STYLE_DESC" />
-				<field type="spacer" name="@spacer09" hr="true" />
+				<field name="titleFontStyle" type="text" size="50" default="" label="MOD_VT_NIVO_SLIDER_FIELD_TITLE_FONT_STYLE" description="MOD_VT_NIVO_SLIDER_FIELD_TITLE_FONT_STYLE_DESC" />
+				<field type="spacer" name="@bwbexwjejl" hr="true" />
 				<field name="descColor" type="colorpicker" default="#333333" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_VT_NIVO_SLIDER_FIELD_DESCRIPTION_COLOR" description="MOD_VT_NIVO_SLIDER_FIELD_DESCRIPTION_COLOR_DESC" />
 				<field name="descFontSize" type="integer" default="12" first="10" last="36" step="1" label="MOD_VT_NIVO_SLIDER_FIELD_DESC_FONT_SIZE" description="MOD_VT_NIVO_SLIDER_FIELD_DESC_FONT_SIZE_DESC" />
-				<field name="descFontStyle" type="folderlist" directory="media/mod_vt_nivo_slider/fonts" hide_none="1" hide_default="0" default="" label="MOD_VT_NIVO_SLIDER_FIELD_DESC_FONT_STYLE" description="MOD_VT_NIVO_SLIDER_FIELD_DESC_FONT_STYLE_DESC" />
-				<field type="spacer" name="@spacer10" hr="true" />
+				<field name="descFontStyle" type="text" size="50" default="" label="MOD_VT_NIVO_SLIDER_FIELD_DESC_FONT_STYLE" description="MOD_VT_NIVO_SLIDER_FIELD_DESC_FONT_STYLE_DESC" />
+				<field type="spacer" name="@zxxqjbbjuo" hr="true" />
 				<field name="captionWidth" type="text" default="auto" label="MOD_VT_NIVO_SLIDER_FIELD_CAPTION_WIDTH" description="MOD_VT_NIVO_SLIDER_FIELD_CAPTION_WIDTH_DESC" />
 				<field name="captionHeight" type="text" default="auto" label="MOD_VT_NIVO_SLIDER_FIELD_CAPTION_HEIGHT" description="MOD_VT_NIVO_SLIDER_FIELD_CAPTION_HEIGHT_DESC" />
 				<field name="captionBackground" type="colorpicker" default="#ffffcc" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_VT_NIVO_SLIDER_FIELD_CAPTION_BACKGROUND" description="MOD_VT_NIVO_SLIDER_FIELD_CAPTION_BACKGROUND_DESC" />
@@ -156,7 +161,7 @@
 			</fieldset>
 			<fieldset name="advanced">
 				<field name="moduleclass_sfx" type="text" size="40" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
-				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULEjoS_FIELD_CACHING_DESC">
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
 					<option value="1">JGLOBAL_USE_GLOBAL</option>
 					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
 				</field>
@@ -172,8 +177,8 @@
 					<option value="jquery">MOD_VT_NIVO_SLIDER_OPTION_JQUERY_SOURCE_JQUERY</option>
 					<option value="none">JNONE</option>
 				</field>
-				<field name="jquery_version" type="folderlist" default="1.7.1" directory="media/mod_vt_nivo_slider/js/jquery/" filter="" exclude="" stripext="" hide_none="1" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION" description="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION_DESC" />
-				<field type="spacer" name="@space11" hr="true" />
+				<field name="jquery_version" type="folderlist" default="1.9.0" directory="media/mod_vt_nivo_slider/js/jquery/" filter="" exclude="" stripext="" hide_none="1" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION" description="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION_DESC" />
+				<field type="spacer" name="@fpvdjhnieo" hr="true" />
 				<field name="controlNavThumbs" type="hidden" default="false" label="MOD_VT_NIVO_SLIDER_FIELD_CONTROLNAVTHUMBS" description="MOD_VT_NIVO_SLIDER_FIELD_CONTROLNAVTHUMBS_DESC">
 					<option value="true">JYES</option>
 					<option value="false">JNO</option>

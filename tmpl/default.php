@@ -14,7 +14,7 @@
 // no direct access
 defined('_JEXEC') or die;
 ?>
-<?php if($theme=="amazing"){ ?>
+<?php if($theme == "amazing"){ ?>
 <style type="text/css">
 #vtnivo<?php echo $module_id; ?> {
 	overflow: visible;
@@ -32,8 +32,8 @@ defined('_JEXEC') or die;
 <?php } ?>
 <?php if($slide_bdshadow){ ?>
 #vtnivo<?php echo $module_id; ?> {
-	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
 	-moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
 	box-shadow: 0px 1px 5px 0px #4a4a4a;
 }
 <?php } ?>
@@ -100,7 +100,9 @@ defined('_JEXEC') or die;
 <!-- BEGIN: Vinaora Nivo Slider >> http://vinaora.com/ -->
 <div class="vt_nivo_slider<?php echo $moduleclass_sfx?>">
 	<div id="vtnivo<?php echo $module_id; ?>" class="slider-wrapper theme-<?php echo $theme; ?> theme-<?php echo $theme.$module_id; ?> nivocontrol-<?php echo $controlPosition; ?> nivo-bullets<?php echo $controlStyle; ?> nivo-arrows<?php echo $arrowStyle; ?> captionposition-<?php echo $captionPosition; ?> captionrounded-<?php echo $captionRounded; ?>">
-		<div class="ribbon"></div>
+		<?php if($ribbon){ ?>
+			<div class="ribbon"></div>
+		<?php } ?>
 		<div id="vt_nivo_slider<?php echo $module_id; ?>" class="nivoSlider">
 			<?php echo $images; ?>
 		</div>
