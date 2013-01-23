@@ -11,10 +11,10 @@ Supports Thumbs: true
 .theme-default .nivoSlider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
-    margin-bottom:10px;
-    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
-    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
-    box-shadow: 0px 1px 5px 0px #4a4a4a;
+	margin-bottom:10px;
+	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	-moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	box-shadow: 0px 1px 5px 0px #4a4a4a;
 }
 .theme-default .nivoSlider img {
 	position:absolute;
@@ -53,9 +53,9 @@ Supports Thumbs: true
 	border:0;
 	opacity: 0;
 	-webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 .theme-default:hover .nivo-directionNav a { opacity: 1; }
 .theme-default a.nivo-nextNav {
@@ -67,14 +67,14 @@ Supports Thumbs: true
 }
 
 .theme-default .nivo-caption {
-    font-family: Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 .theme-default .nivo-caption a {
-    color:#fff;
-    border-bottom:1px dotted #fff;
+	color:#fff;
+	border-bottom:1px dotted #fff;
 }
 .theme-default .nivo-caption a:hover {
-    color:#fff;
+	color:#fff;
 }
 
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
