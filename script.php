@@ -22,9 +22,6 @@ class mod_VT_Nivo_SliderInstallerScript{
 	 */
 	function install($parent)
 	{
-		// $parent is the class calling this method
-		// $parent->getParent()->setRedirectURL('index.php?option=com_helloworld');
-		echo __FUNCTION__;
 	}
  
 	/**
@@ -34,9 +31,6 @@ class mod_VT_Nivo_SliderInstallerScript{
 	 */
 	function uninstall($parent) 
 	{
-		echo __FUNCTION__;
-		// $parent is the class calling this method
-		echo '<p>' . JText::_('COM_HELLOWORLD_UNINSTALL_TEXT') . '</p>';
 	}
 
 	/**
@@ -46,8 +40,20 @@ class mod_VT_Nivo_SliderInstallerScript{
 	 */
 	function update($parent) 
 	{
-		echo __FUNCTION__;
-		// $parent is the class calling this method
-		echo '<p>' . JText::sprintf('COM_HELLOWORLD_UPDATE_TEXT', $parent->get('manifest')->version) . '</p>';
+		$version = $parent->get('manifest')->version;
+		
+		// Remove the directory '/media/.../fonts'
+		$path = JPATH_ROOT . '/media/mod_vt_nivo_slider/fonts';
+		if( file_exists( $path ) ){
+			JFolder::delete( $path );
+		}
+		
+		// Remove the outdated jquery scripts from 1.0.x to 1.6.x'
+		$path = JPATH_ROOT . '/media/mod_vt_nivo_slider/js/jquery';
+		$folders = JFolder::folders($path, '^1\.[0-6]\.[0-9]$', false, true);
+		foreach($folders as $folder){
+			JFolder::delete( $folder );
+		}
+		
 	}
 }
