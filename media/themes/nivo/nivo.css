@@ -10,7 +10,9 @@ Author: Gilbert Pellegrom
 Author URI: http://dev7studios.com
 */
 
-.slider-wrapper.theme-nivo { position: relative; }
+.slider-wrapper.theme-nivo {
+	position: relative;
+}
 .theme-nivo .nivoSlider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
@@ -27,24 +29,24 @@ Author URI: http://dev7studios.com
 }
 
 .theme-nivo .nivo-controlNav {
-    background:url(control-nav.png) no-repeat;
-    width:72px;
-    height:13px;
+	background:url(control-nav.png) no-repeat;
+	width:72px;
+	height:13px;
 	position:absolute;
 	left:50%;
 	bottom:15px;
-    margin-left:-51px; /* Tweak this to center bullets */
-    z-index:210;
-    padding:15px 13px 15px 17px;
-    opacity:0.5;
-    -webkit-transition: opacity 300ms ease-in-out;
-    -moz-transition: opacity 300ms ease-in-out;
-    -ms-transition: opacity 300ms ease-in-out;
-    -o-transition: opacity 300ms ease-in-out;
-    transition: opacity 300ms ease-in-out;
+	margin-left:-51px; /* Tweak this to center bullets */
+	z-index:210;
+	padding:15px 13px 15px 17px;
+	opacity:0.5;
+	-webkit-transition: opacity 300ms ease-in-out;
+	-moz-transition: opacity 300ms ease-in-out;
+	-ms-transition: opacity 300ms ease-in-out;
+	-o-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
 }
 .theme-nivo:hover .nivo-controlNav {
-    opacity:1.0;
+	opacity:1.0;
 }
 .theme-nivo .nivo-controlNav a {
 	display:block;
@@ -67,37 +69,37 @@ Author URI: http://dev7studios.com
 	background:url(arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
-    opacity: 0;
-    -webkit-transition: opacity 300ms ease-in-out;
-    -moz-transition: opacity 300ms ease-in-out;
-    -ms-transition: opacity 300ms ease-in-out;
-    -o-transition: opacity 300ms ease-in-out;
-    transition: opacity 300ms ease-in-out;
+	opacity: 0;
+	-webkit-transition: opacity 300ms ease-in-out;
+	-moz-transition: opacity 300ms ease-in-out;
+	-ms-transition: opacity 300ms ease-in-out;
+	-o-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
 }
 .theme-nivo:hover .nivo-directionNav a { opacity: 1; }
 .theme-nivo a.nivo-nextNav {
 	background-position:-43px 0;
 	right:390px;
-    top:350px;
+	top:350px;
 }
 .theme-nivo a.nivo-nextNav:hover {
 	background-position:-43px -43px;
 }
 .theme-nivo a.nivo-prevNav {
 	left:390px;
-    top:350px;
+	top:350px;
 }
 .theme-nivo a.nivo-prevNav:hover {
 	background-position:0 -43px;
 }
 
 .theme-nivo .nivo-caption {
-    font-family: Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 .theme-nivo .nivo-caption a {
-    color:#fff;
-    border-bottom:1px dotted #fff;
+	color:#fff;
+	border-bottom:1px dotted #fff;
 }
 .theme-nivo .nivo-caption a:hover {
-    color:#fff;
+	color:#fff;
 }
