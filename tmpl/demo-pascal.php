@@ -14,10 +14,11 @@
 // no direct access
 defined('_JEXEC') or die;
 ?>
+
 <!-- BEGIN: Vinaora Nivo Slider >> http://vinaora.com/ -->
 <div class="vt_nivo_slider<?php echo $moduleclass_sfx?>">
 	<div class="slider-wrapper theme-pascal">
-		<div class="ribbon"></div>
+		<?php if($ribbon){ ?><div class="ribbon"></div><?php } ?>
 		<div id="vt_nivo_slider<?php echo $module_id; ?>" class="nivoSlider">
 			<a href="http://vinaora.com/vinaora-visitors-counter/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-pascal/toystory_pascal.jpg" alt="toystory_pascal" title="#nivocaption0" /></a>
 			<a href="http://vinaora.com/vinaora-cu3er-3d-slideshow/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-pascal/up_pascal.jpg" alt="up_pascal" title="#nivocaption1" /></a>
