@@ -18,16 +18,16 @@ defined('_JEXEC') or die;
 <!-- BEGIN: Vinaora Nivo Slider >> http://vinaora.com/ -->
 <div class="vt_nivo_slider<?php echo $moduleclass_sfx?>">
 	<div class="slider-wrapper theme-light">
-		<div class="ribbon"></div>
+		<?php if($ribbon){ ?><div class="ribbon"></div><?php } ?>
 		<div id="vt_nivo_slider<?php echo $module_id; ?>" class="nivoSlider">
-			<a href="http://vinaora.com/vinaora-slick-slideshow/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-standard/toystory.jpg" alt="toystory" title="#nivocaption0" /></a>
+			<a href="http://vinaora.com/vinaora-cu3ox-slideshow/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-standard/toystory.jpg" alt="toystory" title="#nivocaption0" /></a>
 			<a href="http://vinaora.com/vinaora-visitors-counter/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-standard/up.jpg" alt="up" title="#nivocaption1" /></a>
 			<a href="http://vinaora.com/vinaora-nivo-slider/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-standard/walle.jpg" alt="walle" title="#nivocaption2" /></a>
 			<a href="http://vinaora.com/vinaora-cu3er-3d-slideshow/" target="_blank"><img src="<?php echo $base_url; ?>/media/mod_vt_nivo_slider/images/demo-standard/nemo.jpg" alt="nemo" title="#nivocaption3" /></a>
 		</div>
 		<div id="nivocaption0" class="nivo-html-caption">
-			<div class="nivo-heading">Vinaora Slick Slideshow</div>
-			<div class="nivo-description"><a href="http://vinaora.com/vinaora-slick-slideshow/" target="_blank">Fashionable flash</a> + image slideshow with slick navigation and design, fully customizable...</div>
+			<div class="nivo-heading">Vinaora Cu3ox Slideshow</div>
+			<div class="nivo-description">Create an attractive <a href="http://vinaora.com/vinaora-cu3ox-slideshow/" target="_blank">Joomla image slider</a> with cool 3D slice effects</div>
 		</div>
 		<div id="nivocaption1" class="nivo-html-caption">
 			<div class="nivo-heading">Vinaora Visitors Counter</div>
