@@ -8,8 +8,8 @@ You can choose many slick and responsive themes to show your gallery. Not same a
 * Homepage: http://vinaora.com/vinaora-nivo-slider/
 * Demo: http://demo.vinaora.com/vinaora-nivo-slider/
 
-Key Features
-------------
+Key Features of Slideshow
+-------------------------
 * 7+ demos included
 * 8+ slick and responsive themes
 * 15+ unique transition effects
@@ -20,7 +20,7 @@ Key Features
 * Free to use
 * Responsive
 
-Responsive web design (often abbreviated to RWD) is an approach to web design in which a site is crafted to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones)
+Responsive web design (often abbreviated to RWD) is an approach to web design in which a site is crafted to provide an optimal viewing experienceï¿½easy reading and navigation with a minimum of resizing, panning, and scrollingï¿½across a wide range of devices (from desktop computer monitors to mobile phones)
 
 Our Featured Joomla Slideshows
 ------------------------------
@@ -32,7 +32,7 @@ Our Featured Joomla Slideshows
 Donate
 ------
 
-If you like [Vinaora Nivo Slider](http://vinaora.com/vinaora-nivo-slider/), you can support our work by donating today.
+If you like [Vinaora Nivo Slider](http://vinaora.com/vinaora-nivo-slider/) slideshow, you can support our work by donating today.
 
 * You can share this link http://vinaora.com/vinaora-nivo-slider/ with your friends or others
 * Buy very fast and reliability [business hosting](https://secure1.inmotionhosting.com/cgi-bin/gby/clickthru.cgi?id=vinaora&page=5) from InmotionHosting >> http://goo.gl/dfN4F (recommended)

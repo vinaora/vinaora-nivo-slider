@@ -177,7 +177,7 @@
 					<option value="jquery">MOD_VT_NIVO_SLIDER_OPTION_JQUERY_SOURCE_JQUERY</option>
 					<option value="none">JNONE</option>
 				</field>
-				<field name="jquery_version" type="folderlist" default="1.9.0" directory="media/mod_vt_nivo_slider/js/jquery/" filter="" exclude="" stripext="" hide_none="1" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION" description="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION_DESC" />
+				<field name="jquery_version" type="folderlist" default="latest" directory="media/mod_vt_nivo_slider/js/jquery/" filter="" exclude="" stripext="" hide_none="1" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION" description="MOD_VT_NIVO_SLIDER_FIELD_JQUERY_VERSION_DESC" />
 				<field type="spacer" name="@fpvdjhnieo" hr="true" />
 				<field name="controlNavThumbs" type="hidden" default="false" label="MOD_VT_NIVO_SLIDER_FIELD_CONTROLNAVTHUMBS" description="MOD_VT_NIVO_SLIDER_FIELD_CONTROLNAVTHUMBS_DESC">
 					<option value="true">JYES</option>
