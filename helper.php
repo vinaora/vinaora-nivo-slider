@@ -72,11 +72,11 @@ class modVT_Nivo_SliderHelper
 
 		// Valid the Font styles
 		$param = $params->get('titleFontStyle');
-		$param = self::getFontStyle($param);
+		$param = trim($param);
 		$params->set('titleFontStyle', $param);
 
 		$param = $params->get('descFontStyle');
-		$param = self::getFontStyle($param);
+		$param = trim($param);
 		$params->set('descFontStyle', $param);
 
 		return $params;
@@ -280,15 +280,6 @@ class modVT_Nivo_SliderHelper
 		$startSlide = (!$startSlide) ? mt_rand(0, $total-1) : $startSlide-1;
 
 		return $startSlide;
-	}
-
-	/*
-	 * Get the font-family
-	 */
-	public static function getFontStyle($font=""){
-		$str = "";
-		$str = preg_replace('/(\w+)\s(\w+(\s\w+)?)/', "\"$1 $2\"", $font);
-		return $str;
 	}
 
 	/*
