@@ -10,15 +10,17 @@ You can choose slick themes to show your gallery. Not same as [Vinaora Slick Sho
 
 Key Features
 ------------
-* 3 demos included
-* 3 Slick Themes
-* 16 unique transition effects
+* 7+ demos included
+* 8+ slick themes
+* 15+ unique transition effects
 * Simple clean & valid markup
 * Loads of settings to tweak
 * Built in directional and control navigation
 * Supports linking images
 * Free to use
 * Responsive
+
+Responsive web design (often abbreviated to RWD) is an approach to web design in which a site is crafted to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones)
 
 Our Featured Joomla Slideshows
 ------------------------------
