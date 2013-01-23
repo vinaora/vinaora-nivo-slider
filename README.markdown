@@ -20,7 +20,7 @@ Key Features of Slideshow
 * Free to use
 * Responsive
 
-Responsive web design (often abbreviated to RWD) is an approach to web design in which a site is crafted to provide an optimal viewing experience�easy reading and navigation with a minimum of resizing, panning, and scrolling�across a wide range of devices (from desktop computer monitors to mobile phones)
+Responsive web design (often abbreviated to RWD) is an approach to web design in which a site is crafted to provide an optimal viewing experience - easy reading and navigation with a minimum of resizing, panning, and scrolling - across a wide range of devices (from desktop computer monitors to mobile phones)
 
 Our Featured Joomla Slideshows
 ------------------------------
