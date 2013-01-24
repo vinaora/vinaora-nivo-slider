@@ -264,7 +264,7 @@ class modVT_Nivo_SliderHelper
 		return '';
 	}
 
-	/*
+	/**
 	 * Get the Paths of Items
 	 */
 	public static function getItems($params){
@@ -277,22 +277,29 @@ class modVT_Nivo_SliderHelper
 		foreach($param as $key=>$value){
 			$param[$key] = self::validPath($value);
 		}
-		// Remove empty element
+
+		// Remove empty elements
 		$param = array_filter($param);
+
 		// Get Paths from directory
 		if (empty($param)){
-			$param	= $params->get('item_dir');
-			if ($param == "-1") return null;
+
+			$param	= trim($params->get('item_dir'));
+			$param	= JPath::clean( JPATH_BASE . "/$param" );
+			
+			// Not found the directory
+			if( !is_dir($param) ) return null;
 
 			$filter		= '([^\s]+(\.(?i)(jpg|png|gif|bmp))$)';
 			$exclude	= array('index.html', '.svn', 'CVS', '.DS_Store', '__MACOSX', '.htaccess');
 			$excludefilter = array();
-			// array_push($excludefilter, $params->get('controlNavThumbsReplace'));
 
-			$param	= JFolder::files(JPATH_BASE.DS.'images'.DS.$param, $filter, true, true, $exclude, $excludefilter);
-			foreach($param as $key=>$value){
-				$value = substr($value, strlen(JPATH_BASE.DS) - strlen($value));
-				$param[$key] = self::validPath($value);
+			// Get all images in the directory
+			$param	= JFolder::files($param, $filter, true, true, $exclude, $excludefilter);
+			foreach($param as $key=>$path){
+				$path = substr($path, strlen(JPATH_BASE) - strlen($path) + 1);
+				$path = JPath::clean( $path, "/" );
+				$param[$key] = rtrim(JURI::base(true), "/"). "/$path";
 			}
 		}
 
@@ -301,7 +308,7 @@ class modVT_Nivo_SliderHelper
 		return $param;
 	}
 
-	/*
+	/**
 	 * Get the Valid Path of Item
 	 */
 	public static function validPath($path){
@@ -319,12 +326,12 @@ class modVT_Nivo_SliderHelper
 			else return $path;
 		}
 
-		$path = JPath::clean($path, DS);
-		$path = ltrim($path, DS);
-		if (!is_file(JPATH_BASE.DS.$path)) return '';
+		$path = JPath::clean($path);
+		$path = ltrim($path, DIRECTORY_SEPARATOR);
+		if (!is_file(JPATH_BASE . DIRECTORY_SEPARATOR . $path)) return '';
 
-		// Convert it to url path
-		$path = JPath::clean(JURI::base(true)."/".$path, "/");
+		// Convert it to URL path
+		$path = JPath::clean(JURI::base(true)."/$path", "/");
 		
 		return $path;
 	}
