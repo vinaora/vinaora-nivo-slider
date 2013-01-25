@@ -77,7 +77,7 @@ if ($layout == 'default'){
 	
 	$slide_width				= $params->get('slide_width');
 	$slide_height				= $params->get('slide_height');
-
+	
 	// Get the parameters for 'amazing' theme
 	$slide_bgcolor				= $params->get('slide_bgcolor');
 	$slide_bdcolor				= $params->get('slide_bdcolor');
@@ -107,10 +107,12 @@ if ($layout == 'default'){
 	$captionMargin				= $params->get('captionMargin');
 	$captionRounded				= $params->get('captionRounded');
 	
-	//$controlPosition			= JRequest::getVar('p', 'top');
-	//$controlStyle				= JRequest::getVar('c', '01');
-	//$arrowStyle				= JRequest::getVar('a', '01');
-	//$captionPosition			= JRequest::getVar('t', 'topleft');
+	/*
+	$controlPosition			= JRequest::getVar('p', 'top');
+	$controlStyle				= JRequest::getVar('c', '01');
+	$arrowStyle					= JRequest::getVar('a', '01');
+	$captionPosition			= JRequest::getVar('t', 'topleft');
+	*/
 
 	// Create slider
 	$startSlide	= $helper->getStartSlide($params);

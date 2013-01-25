@@ -138,10 +138,6 @@ class modVT_Nivo_SliderHelper
 	public static function getSlider($params, $separator = "\n"){
 		$slider = array("images"=>'', "captions"=>'');
 
-		// Get the dimension of slideshow
-		$slide_width	= $params->get('slide_width');
-		$slide_height	= $params->get('slide_height');
-		
 		// Get the directory which contain all images
 		$item_dir	= $params->get('item_dir');
 
@@ -161,16 +157,18 @@ class modVT_Nivo_SliderHelper
 
 		foreach($items as $i=>$path){
 		
+			++$i;
+		
 			// Get the title, description and link of every image
-			$title	= self::getParam($titles, $i+1, $separator);
+			$title	= self::getParam($titles, $i, $separator);
 			$title	= trim($title);
 			$title	= htmlspecialchars($title, ENT_QUOTES);
-
-			$desc	= self::getParam($descs, $i+1, $separator);
+			
+			$desc	= self::getParam($descs, $i, $separator);
 			$desc	= trim($desc);
 			$desc	= htmlspecialchars($desc, ENT_QUOTES);
 			
-			$link	= self::getParam($links, $i+1, $separator);
+			$link	= self::getParam($links, $i, $separator);
 			$link	= trim($link);
 			$link	= htmlspecialchars($link, ENT_QUOTES);
 
@@ -194,8 +192,11 @@ class modVT_Nivo_SliderHelper
 				
 				$slider["captions"] .= "</div>\n";
 			}
+			
+			$captionid	= ( empty($captionid) ) ? "" : " title=\"$captionid\"";
+			$data_thumb	= ( empty($data_thumb) ) ? "" : " data-thumb=\"$data_thumb\"";
 
-			$img	= "<img src=\"$path\" alt=\"Vinaora Nivo Slider\" title=\"$captionid\" data-thumb=\"$data_thumb\" width=\"$slide_width\" height=\"$slide_height\"/>";
+			$img	= "<img src=\"$path\" alt=\"Vinaora Nivo Slider\"{$captionid}{$data_thumb}/>";
 			
 			// Found or not found the link of image
 			if (!empty($link)){

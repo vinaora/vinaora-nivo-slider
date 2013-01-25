@@ -39,8 +39,8 @@
 				<field name="demo" type="filelist" default="-1" directory="modules/mod_vt_nivo_slider/tmpl" filter="(^demo-\w+\.php$)" exclude="" stripext="1" hide_none="0" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_DEMO" description="MOD_VT_NIVO_SLIDER_FIELD_DEMO_DESC" />
 				<field type="spacer" name="@bwrxjqgkef" hr="true" />
 				<field name="theme" type="folderlist" default="default" directory="media/mod_vt_nivo_slider/themes" filter="" exclude="" stripext="" hide_none="1" hide_default="1" label="MOD_VT_NIVO_SLIDER_FIELD_THEME" description="MOD_VT_NIVO_SLIDER_FIELD_THEME_DESC" />
-				<field name="slide_width" type="text" default="" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_WIDTH" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_WIDTH_DESC" />
-				<field name="slide_height" type="text" default="" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_HEIGHT" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_HEIGHT_DESC" />
+				<field name="slide_width" type="text" default="auto" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_WIDTH" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_WIDTH_DESC" />
+				<field name="slide_height" type="text" default="auto" label="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_HEIGHT" description="MOD_VT_NIVO_SLIDER_FIELD_SLIDE_HEIGHT_DESC" />
 				<field type="spacer" name="@ejrcngptet" hr="true" />
 				<field name="item_dir" type="text" size="50" label="MOD_VT_NIVO_SLIDER_FIELD_ITEM_DIR" description="MOD_VT_NIVO_SLIDER_FIELD_ITEM_DIR_DESC" />
 				<field name="item_path" type="textarea" rows="5" cols="30" default="" label="MOD_VT_NIVO_SLIDER_FIELD_ITEM_PATH" description="MOD_VT_NIVO_SLIDER_FIELD_ITEM_PATH_DESC" />
