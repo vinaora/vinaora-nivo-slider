@@ -22,6 +22,15 @@ Key Features of Slideshow
 
 Responsive web design (often abbreviated to RWD) is an approach to web design in which a site is crafted to provide an optimal viewing experience - easy reading and navigation with a minimum of resizing, panning, and scrolling - across a wide range of devices (from desktop computer monitors to mobile phones)
 
+FAQs
+----
+* Does the slider support transparent PNG’s?
+No. Due to the way slide transitions work it will look weird.
+* Can I use images that are different sizes?
+As of v3.0 or later, yes you can. The slider is now responsive and can handle images of any size.
+* Can I have multiple sliders on the same page?
+Yes but you will need to use jQuery v1.7 or greater for it to work.
+
 Our Featured Joomla Slideshows
 ------------------------------
 * [Vinaora Cu3er 3D Slideshow](http://vinaora.com/vinaora-cu3er-3d-slideshow/): Show Joomla images in 3D Flash Slide-show

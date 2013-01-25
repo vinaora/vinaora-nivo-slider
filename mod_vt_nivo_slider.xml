@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5.25" client="site" method="upgrade">
+<extension type="module" version="2.5" client="site" method="upgrade">
 	<name>Vinaora Nivo Slider</name>
 	<author>VINAORA</author>
 	<creationDate>Jan 2013</creationDate>
@@ -35,7 +35,7 @@
 	</languages>
 	
 	<updateservers>
-		<server type="extension" priority="1" name="Vinaora Update Site">http://update.vinaora.com/joomla/mod_vt_nivo_slider.xml</server>
+		<server type="extension" priority="1" name="Vinaora Update Server">http://update.vinaora.com/joomla/mod_vt_nivo_slider.xml</server>
 	</updateservers>
 
 	<config>
