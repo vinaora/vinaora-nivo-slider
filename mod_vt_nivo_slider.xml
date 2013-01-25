@@ -33,6 +33,11 @@
 		<language tag="en-GB">language/en-GB.mod_vt_nivo_slider.ini</language>
 		<language tag="en-GB">language/en-GB.mod_vt_nivo_slider.sys.ini</language>
 	</languages>
+	
+	<updateservers>
+		<server type="extension" priority="1" name="Vinaora Update Site">http://update.vinaora.com/joomla/mod_vt_nivo_slider.xml</server>
+	</updateservers>
+
 	<config>
 		<fields name="params" addfieldpath="/modules/mod_vt_nivo_slider/fields" >
 			<fieldset name="basic">
