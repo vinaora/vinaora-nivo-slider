@@ -22,6 +22,7 @@ class mod_VT_Nivo_SliderInstallerScript{
 	 */
 	function install($parent)
 	{
+	
 	}
  
 	/**
@@ -31,6 +32,7 @@ class mod_VT_Nivo_SliderInstallerScript{
 	 */
 	function uninstall($parent) 
 	{
+	
 	}
 
 	/**
@@ -40,43 +42,30 @@ class mod_VT_Nivo_SliderInstallerScript{
 	 */
 	function update($parent) 
 	{
-		$current_version = self::getCurrentVersion('mod_vt_nivo_slider');
-		
-		if($current_version < $parent->get('manifest')->version)
-		
-		// Remove the directory '/media/.../fonts'
-		$path = JPATH_ROOT . '/media/mod_vt_nivo_slider/fonts';
-		if( file_exists( $path ) ){
-			JFolder::delete( $path );
-		}
-		
-		// Remove the outdated jquery scripts from 1.0.x to 1.6.x'
-		$path = JPATH_ROOT . '/media/mod_vt_nivo_slider/js/jquery';
-		$folders = JFolder::folders($path, '^1\.[0-6]\.[0-9]$', false, true);
-		foreach($folders as $folder){
-			JFolder::delete( $folder );
-		}
-		
+
 	}
 	
 	/**
+	 * Function to act prior to installation process begins
 	 * 
-	 * @param (string) $type
-	 * @param (manifest) $parent
+	 * @param	(string)	$type	The action being performed
+	 * @param	(string)	$parent	The function calling this method
+	 * 
+	 * @return	(mixed)		Boolean false on failure, void otherwise
 	 * 
 	 */
-	function preflight( $type, $parent ){
-	
-		// Installing component manifest file version
+	function preflight($type, $parent)
+	{
+		// Installing extension manifest file version
 		$this->release = $parent->get('manifest')->version;
 		
-		if ( $type == 'update' ) {
+		if ($type == 'update'){
 			
 			$oldRelease = $this->getParam('version');
 			
-			if(version_compare($this->release, $oldRelease, 'gt')){
+			if(version_compare($oldRelease, '2.5.25', 'lt')){
 				
-				// Remove the directory '/media/.../fonts'
+				// Remove the directory '/media.../fonts'
 				$path = JPATH_ROOT . '/media/mod_vt_nivo_slider/fonts';
 				if( file_exists( $path ) ){
 					JFolder::delete( $path );
@@ -88,6 +77,9 @@ class mod_VT_Nivo_SliderInstallerScript{
 				foreach($folders as $folder){
 					JFolder::delete( $folder );
 				}
+				
+				// Fix old prameters
+				self::fixParams($oldRelease);
 			}
 			else{
 				// Todo: Warning Version
@@ -115,8 +107,10 @@ class mod_VT_Nivo_SliderInstallerScript{
 		
 	}
 	
-	function updateParams() {
-			
+	function fixParams($oldRelease) {
+		
+		if(version_compare($oldRelease, '2.5.25', 'ge')) return;
+
 		// Read the existing extension value(s)
 		// Get a db connection.
 		$db = JFactory::getDbo();
@@ -127,15 +121,15 @@ class mod_VT_Nivo_SliderInstallerScript{
 		$query
 			->select('params')
 			->from('#__extensions')
-			->where('type = \'module\' AND element = ' . $db->quote('mod_vt_nivo_slider'));
+			->where('type = \'module\' AND element = \'mod_vt_nivo_slider\'');
 		
 		$db->setQuery($query);
 		
 		$params = json_decode( $db->loadResult(), true );
 		
 		$param	= trim($params['item_dir']);
-		if(!file_exists(JPATH_ROOT . "/$param")){
-			$param = "images/$param";
+		$param	= "images/$param";
+		if(file_exists(JPATH_ROOT . "/$param")){
 			$params['item_dir'] = $param;
 		}
 		
@@ -145,8 +139,9 @@ class mod_VT_Nivo_SliderInstallerScript{
 		$query
 			->update('#__extensions')
 			->set('params = ' . $db->quote( $paramsString ))
-			->where('type = \'module\' AND element = ' . $db->quote('mod_vt_nivo_slider'));
+			->where('type = \'module\' AND element = \'mod_vt_nivo_slider\'');
 		$db->setQuery($query);
 		$db->query();
 	}
+
 }

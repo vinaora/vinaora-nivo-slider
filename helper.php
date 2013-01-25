@@ -14,7 +14,7 @@
 // no direct access
 defined('_JEXEC') or die;
 
-class modVT_Nivo_SliderHelper
+class mod_VT_Nivo_SliderHelper
 {
 
 	function __construct(&$params){

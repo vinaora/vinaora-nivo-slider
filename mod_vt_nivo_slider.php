@@ -17,7 +17,7 @@ defined('_JEXEC') or die;
 // Require the base helper class only once
 require_once dirname(__FILE__) . '/helper.php';
 
-$helper = new modVT_Nivo_SliderHelper($params);
+$helper = new mod_VT_Nivo_SliderHelper($params);
 
 // Add the main stylesheet of Nivo Slider to <head> tag
 $helper->addNivoCSS();
