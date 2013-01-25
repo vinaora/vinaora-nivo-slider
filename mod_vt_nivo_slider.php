@@ -14,17 +14,6 @@
 // no direct access
 defined('_JEXEC') or die;
 
-$version = '';
-		
-		$manifest_xml = JPATH_ROOT . '/modules/mod_vt_nivo_slider/mod_vt_nivo_slider.xml';
-		
-		if(file_exists($manifest_xml)){
-			$xml = simplexml_load_file($manifest_xml);
-			$version = $xml->xpath('/extension/version');
-		}
-		
-		var_dump($version[0]->asXML());
-
 // Require the base helper class only once
 require_once dirname(__FILE__) . '/helper.php';
 
