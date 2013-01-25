@@ -98,9 +98,20 @@ defined('_JEXEC') or die;
 }
 </style>
 <?php }?>
+<?php
+$class	= "slider-wrapper "
+		. "theme-$theme "
+		. "theme-{$theme}{$module_id} "
+		. "nivocontrol-$controlPosition "
+		. "nivo-bullets$controlStyle "
+		. "nivo-arrows$arrowStyle "
+		. "captionposition-$captionPosition "
+		. "captionrounded-$captionRounded";
+$style	= "height: $slide_height; width: $slide_width";
+?>
 <!-- BEGIN: Vinaora Nivo Slider >> http://vinaora.com/ -->
 <div class="vt_nivo_slider<?php echo $moduleclass_sfx?>">
-	<div id="vtnivo<?php echo $module_id; ?>" class="slider-wrapper theme-<?php echo $theme; ?> theme-<?php echo $theme.$module_id; ?> nivocontrol-<?php echo $controlPosition; ?> nivo-bullets<?php echo $controlStyle; ?> nivo-arrows<?php echo $arrowStyle; ?> captionposition-<?php echo $captionPosition; ?> captionrounded-<?php echo $captionRounded; ?>">
+	<div id="vtnivo<?php echo $module_id; ?>" class="<?php echo $class; ?>" style="<?php echo $style; ?>">
 		<?php if($ribbon){ ?><div class="ribbon"></div><?php } ?>
 		<div id="vt_nivo_slider<?php echo $module_id; ?>" class="nivoSlider">
 			<?php echo $images; ?>
@@ -108,31 +119,5 @@ defined('_JEXEC') or die;
 		<?php echo $captions; ?>
 	</div>
 </div>
-<script type="text/javascript">
-	jQuery.noConflict();
-	jQuery(window).load(function() {
-		jQuery('#vt_nivo_slider<?php echo $module_id; ?>').nivoSlider({
-			effect: '<?php echo $effect; ?>', // Specify sets like: 'fold,fade,sliceDown'
-			slices: <?php echo $slices; ?>, // For slice animations
-			boxCols: <?php echo $boxCols; ?>, // For box animations
-			boxRows: <?php echo $boxRows; ?>, // For box animations
-			animSpeed: <?php echo $animSpeed; ?>, // Slide transition speed
-			pauseTime: <?php echo $pauseTime; ?>, // How long each slide will show
-			startSlide: <?php echo $startSlide; ?>, // Set starting Slide (0 index)
-			directionNav: <?php echo $directionNav; ?>, // Next & Prev navigation
-			controlNav: <?php echo $controlNav; ?>, // 1,2,3... navigation
-			controlNavThumbs: <?php echo $controlNavThumbs; ?>, // Use thumbnails for Control Nav
-			pauseOnHover: <?php echo $pauseOnHover; ?>, // Stop animation while hovering
-			manualAdvance: <?php echo $manualAdvance; ?>, // Force manual transitions
-			prevText: '<?php echo $prevText; ?>', // Prev directionNav text
-			nextText: '<?php echo $nextText; ?>', // Next directionNav text
-			randomStart: <?php echo $randomStart; ?>, // Start on a random slide
-			beforeChange: function(){}, // Triggers before a slide transition
-			afterChange: function(){}, // Triggers after a slide transition
-			slideshowEnd: function(){}, // Triggers after all slides have been shown
-			lastSlide: function(){}, // Triggers when last slide is shown
-			afterLoad: function(){} // Triggers when slider has loaded
-		});
-	});
-</script>
+<?php require JModuleHelper::getLayoutPath('mod_vt_nivo_slider', '_script'); ?>
 <!-- END: Vinaora Nivo Slider >> http://vinaora.com/ -->
