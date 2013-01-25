@@ -16,6 +16,7 @@ defined('_JEXEC') or die;
 
 class modVT_Nivo_SliderHelper
 {
+
 	function __construct(&$params){
 	
 		// Valid the Dimension of Slideshow
@@ -243,13 +244,13 @@ class modVT_Nivo_SliderHelper
 		return $param;
 	}
 
-	/*
+	/**
 	 * Get a Parameter in a Parameters String which are separated by a specify symbol (default: vertical bar '|').
 	 * Example: Parameters = "value1 | value2 | value3". Return "value2" if positon = 2
 	 */
 	public static function getParam($param, $position=1, $separator='|'){
 
-		$position = intval($position);
+		$position = (int) $position;
 
 		// Not found the separator in string
 		if( strpos($param, $separator) === false ){
@@ -257,7 +258,7 @@ class modVT_Nivo_SliderHelper
 		}
 		// Found the separator in string
 		else{
-			$param = ($separator = "\n") ? str_replace(array("\r\n","\r"), "\n", $param) : $param;
+			$param = ($separator == "\n") ? str_replace(array("\r\n","\r"), "\n", $param) : $param;
 			$items = explode($separator, $param);
 			if ( ($position > 0) && ($position < count($items)+1) ) return $items[$position-1];
 		}
