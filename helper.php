@@ -77,7 +77,7 @@ class mod_VT_Nivo_SliderHelper
 	/**
 	 * Add jQuery Library to <head> tag
 	 */
-	public static function addjQuery($source='local', $version='1.9.0'){
+	public static function addjQuery($source='local', $version='1.9.1'){
 
 		$source	= strtolower(trim($source));
 		$version = trim($version);

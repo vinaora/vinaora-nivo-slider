@@ -66,11 +66,11 @@
 					<option value="sliceUpLeft">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_SLICEUPLEFT</option>
 					<option value="sliceUpDown">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_SLICEUPDOWN</option>
 					<option value="sliceUpDownLeft">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_SLICEUPDOWNLEFT</option>
-					<option value="fold">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_FOLD</option>
-					<option value="fade">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_FADE</option>
-					<option value="random">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_RANDOM</option>
 					<option value="slideInRight">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_SLIDEINRIGHT</option>
 					<option value="slideInLeft">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_SLIDEINLEFT</option>
+					<option value="fade">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_FADE</option>
+					<option value="fold">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_FOLD</option>
+					<option value="random">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_RANDOM</option>
 					<option value="boxRandom">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_BOXRANDOM</option>
 					<option value="boxRain">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_BOXRAIN</option>
 					<option value="boxRainReverse">MOD_VT_NIVO_SLIDER_OPTION_EFFECT_BOXRAINREVERSE</option>

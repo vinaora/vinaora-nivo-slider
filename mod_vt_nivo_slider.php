@@ -107,7 +107,7 @@ if ($layout == 'default'){
 	$captionMargin				= $params->get('captionMargin');
 	$captionRounded				= $params->get('captionRounded');
 	
-	/*
+	/* For testing
 	$controlPosition			= JRequest::getVar('p', 'top');
 	$controlStyle				= JRequest::getVar('c', '01');
 	$arrowStyle					= JRequest::getVar('a', '01');
