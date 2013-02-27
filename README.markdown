@@ -1,7 +1,7 @@
 Vinaora Nivo Slider
 ===================
 
-[Vinaora Nivo Slider](http://vinaora.com/vinaora-nivo-slider/) is a great responsive slideshow module for Joomla. It allows you to easily create an image slider (slideshow or slide-show) using Nivo Slider. This javascript slider created by [dev7studios](http://nivo.dev7studios.com) and was the world's most awesome jQuery slider (hit nearly 2,000,000 downloads in Jan 2013). It also installed on many WordPress websites, too. Completely free and totally open source, there literally is no better way to make your website look totally stunning.
+[Vinaora Nivo Slider](http://vinaora.com/vinaora-nivo-slider/) is a great responsive slideshow module for Joomla. It allows you to easily create an image slider (slideshow or slide-show) using Nivo Slider. This javascript slider created by [dev7studios](http://nivo.dev7studios.com) and was the world's most awesome jQuery slider (hit over 2,000,000 downloads in Feb 2013). It also installed on many WordPress websites, too. Completely free and totally open source, there literally is no better way to make your website look totally stunning.
 
 One of the great things about the Vinaora Nivo Slider is that it is highly customisable. You can choose many slick and responsive themes to show your gallery. Not same as [Vinaora Slick Show](http://vinaora.com/vinaora-slick-slideshow/), [Vinaora Cu3er 3D Slideshow](http://vinaora.com/vinaora-cu3er-3d-slideshow/) or [Vinaora Cu3ox Slideshow](http://vinaora.com/vinaora-cu3ox-slideshow/), this slider supports more than 15 unique transition effects without using flash. Vinaora Nivo Slider runs well on Joomla 1.5, Joomla 2.5 and well-known browsers: Internet Explorer 7+, Firefox 3+, Google Chrome 4+, Safari 4+ and Opera 10+.
 
