@@ -2,7 +2,7 @@
 <extension type="module" version="2.5" client="site" method="upgrade">
 	<name>Vinaora Nivo Slider</name>
 	<author>VINAORA</author>
-	<creationDate>Jan 2013</creationDate>
+	<creationDate>Feb 2013</creationDate>
 	<copyright>Copyright (C) 2011-2013 VINAORA. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@vinaora.com</authorEmail>
