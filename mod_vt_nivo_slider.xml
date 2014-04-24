@@ -133,8 +133,8 @@
 					<option value="bottomright">MOD_VT_NIVO_SLIDER_OPTION_CONTROL_POSITION_BOTTOM_RIGHT</option>
 					<option value="bellow">MOD_VT_NIVO_SLIDER_OPTION_CONTROL_POSITION_BELLOW</option>
 				</field>
-				<field name="controlStyle" type="filelist" directory="media/mod_vt_nivo_slider/themes/amazing/bullets" filter="(^[0-9]{2}\.png$)" exclude="" stripext=".png" hide_none="true" hide_default="true" default="05" label="MOD_VT_NIVO_SLIDER_FIELD_CONTROLSTYLE" description="MOD_VT_NIVO_SLIDER_FIELD_CONTROLSTYLE_DESC" />
-				<field name="arrowStyle" type="filelist" directory="media/mod_vt_nivo_slider/themes/amazing/arrows" filter="(^[0-9]{2}\.png$)" exclude="" stripext=".png" hide_none="true" hide_default="true" default="10" label="MOD_VT_NIVO_SLIDER_FIELD_ARROWSTYLE" description="MOD_VT_NIVO_SLIDER_FIELD_ARROWSTYLE_DESC" />
+				<field name="controlStyle" type="filelist" directory="media/mod_vt_nivo_slider/themes/amazing/bullets" filter="(^[0-9]{2}\.png$)" exclude="" stripext="1" hide_none="true" hide_default="true" default="05" label="MOD_VT_NIVO_SLIDER_FIELD_CONTROLSTYLE" description="MOD_VT_NIVO_SLIDER_FIELD_CONTROLSTYLE_DESC" />
+				<field name="arrowStyle" type="filelist" directory="media/mod_vt_nivo_slider/themes/amazing/arrows" filter="(^[0-9]{2}\.png$)" exclude="" stripext="1" hide_none="true" hide_default="true" default="10" label="MOD_VT_NIVO_SLIDER_FIELD_ARROWSTYLE" description="MOD_VT_NIVO_SLIDER_FIELD_ARROWSTYLE_DESC" />
 				<field type="spacer" name="@jbuisupvap" hr="true" />
 				<field name="titleColor" type="colorpicker" default="#333333" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_VT_NIVO_SLIDER_FIELD_TITLE_COLOR" description="MOD_VT_NIVO_SLIDER_FIELD_TITLE_COLOR_DESC" />
 				<field name="titleFontSize" type="integer" default="18" first="10" last="36" step="1" label="MOD_VT_NIVO_SLIDER_FIELD_TITLE_FONT_SIZE" description="MOD_VT_NIVO_SLIDER_FIELD_TITLE_FONT_SIZE_DESC" />
